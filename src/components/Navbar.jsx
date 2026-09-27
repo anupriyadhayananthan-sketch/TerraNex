@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { Bell, ShieldAlert, ChevronDown, Layers, MapPin, BarChart3, UserCheck, Database, TrendingUp } from 'lucide-react';
+import { Bell, ShieldAlert, ChevronDown, Layers, MapPin, BarChart3, UserCheck, Database, TrendingUp, Table2 } from 'lucide-react';
 import { useRole } from '../context/RoleContext';
 import { getHighRiskProjects } from '../utils/dataLoader';
 import ThemeToggle from './ThemeToggle';
@@ -121,6 +121,19 @@ export default function Navbar() {
             >
               <TrendingUp className="w-4 h-4" />
               <span>Precedent</span>
+            </NavLink>
+
+            <NavLink
+              to="/dataset"
+              className={({ isActive }) =>
+                `flex items-center space-x-2 px-3.5 py-1.5 rounded-lg text-sm font-medium transition-all ${isActive
+                  ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
+                  : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
+                }`
+              }
+            >
+              <Table2 className="w-4 h-4" />
+              <span>Dataset</span>
             </NavLink>
           </nav>
 
@@ -287,6 +300,15 @@ export default function Navbar() {
         >
           <TrendingUp className="w-4 h-4 mb-0.5" />
           <span>Precedent</span>
+        </NavLink>
+        <NavLink
+          to="/dataset"
+          className={({ isActive }) =>
+            `flex flex-col items-center py-1 ${isActive ? 'text-indigo-400 font-bold' : 'text-slate-400'}`
+          }
+        >
+          <Table2 className="w-4 h-4 mb-0.5" />
+          <span>Dataset</span>
         </NavLink>
       </div>
     </header>
