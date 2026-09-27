@@ -38,7 +38,7 @@ export default function App() {
           <footer className="border-t border-slate-800/80 bg-slate-950 py-6 text-center text-xs text-slate-500">
             <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
               <div>
-                <strong className="text-slate-300">TerraNex AI</strong> — Smart India Hackathon MVP (PS 26017)
+                <strong className="text-slate-300">TerraNex AI</strong>
               </div>
               <div>
                 Predict → Explain → Act Early-Warning System

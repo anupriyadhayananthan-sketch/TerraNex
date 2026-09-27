@@ -2,16 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
-import { 
-  ArrowLeft, 
-  AlertTriangle, 
-  TrendingDown, 
-  CheckCircle2, 
-  Sliders, 
-  MapPin, 
-  Database, 
-  Clock, 
-  Layers, 
+import {
+  ArrowLeft,
+  AlertTriangle,
+  TrendingDown,
+  CheckCircle2,
+  Sliders,
+  MapPin,
+  Database,
+  Clock,
+  Layers,
   Info,
   Building,
   Users,
@@ -102,7 +102,7 @@ export default function ProjectDetail() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8 animate-fade-in">
-      
+
       {/* Top Navigation Back Link */}
       <div>
         <Link
@@ -148,7 +148,7 @@ export default function ProjectDetail() {
 
         {/* Overall Risk Score Badge & Sparkline */}
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 shrink-0">
-          
+
           {/* Feature 1: Expanded Sparkline */}
           <div className="min-w-[200px]">
             <RiskTrendSparkline projectId={project.id} variant="expanded" />
@@ -166,7 +166,7 @@ export default function ProjectDetail() {
                 {displayCategory}
               </span>
             </div>
-            
+
             {hasDisputeFriction && (
               <span className="mt-1.5 px-2 py-0.5 text-[10px] font-extrabold bg-red-950 text-red-300 border border-red-700/60 rounded-full inline-block self-end" title="+5 risk bump applied from 2+ dispute records">
                 ⚠ Rising legal/public friction
@@ -234,7 +234,7 @@ export default function ProjectDetail() {
 
       {/* Two-Column Section: Explainability ("Why?") + Mini Map */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        
+
         {/* Why? (Explainability Panel with ML Tier 2 Badge) */}
         <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl flex flex-col justify-between">
           <div>
@@ -266,8 +266,8 @@ export default function ProjectDetail() {
                 const barColorClass = isNegative
                   ? '#16a34a'
                   : impact >= 15
-                  ? '#dc2626'
-                  : '#f59e0b';
+                    ? '#dc2626'
+                    : '#f59e0b';
 
                 return (
                   <div key={idx} className="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800">
@@ -426,7 +426,7 @@ export default function ProjectDetail() {
         </div>
 
         <p className="text-xs text-slate-300">
-          Drag the slider to test policy levers (e.g. increasing Compensation Disbursed %). The system recomputes the expected overall risk score live using the §5 algorithm.
+          Drag the slider to test policy levers (e.g. increasing Compensation Disbursed %).
         </p>
 
         <div className="bg-slate-950/80 p-5 rounded-xl border border-slate-800 space-y-4">

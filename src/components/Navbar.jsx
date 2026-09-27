@@ -40,7 +40,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 shadow-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          
+
           {/* Logo & Branding */}
           <div className="flex items-center space-x-3">
             <NavLink to="/dashboard" className="flex items-center space-x-2 group">
@@ -51,9 +51,7 @@ export default function Navbar() {
                 <span className="text-xl font-extrabold bg-gradient-to-r from-white via-slate-200 to-indigo-300 bg-clip-text text-transparent tracking-tight">
                   TerraNex <span className="text-indigo-400 font-semibold">AI</span>
                 </span>
-                <span className="ml-2 px-2 py-0.5 text-[10px] font-medium bg-indigo-950/80 text-indigo-300 border border-indigo-700/50 rounded-full hidden sm:inline-block">
-                  PS 26017 MVP
-                </span>
+
               </div>
             </NavLink>
           </div>
@@ -63,10 +61,9 @@ export default function Navbar() {
             <NavLink
               to="/dashboard"
               className={({ isActive }) =>
-                `flex items-center space-x-2 px-3.5 py-1.5 rounded-lg text-sm font-medium transition-all ${
-                  isActive
-                    ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
-                    : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
+                `flex items-center space-x-2 px-3.5 py-1.5 rounded-lg text-sm font-medium transition-all ${isActive
+                  ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
+                  : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
                 }`
               }
             >
@@ -77,10 +74,9 @@ export default function Navbar() {
             <NavLink
               to="/portfolio"
               className={({ isActive }) =>
-                `flex items-center space-x-2 px-3.5 py-1.5 rounded-lg text-sm font-medium transition-all ${
-                  isActive
-                    ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
-                    : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
+                `flex items-center space-x-2 px-3.5 py-1.5 rounded-lg text-sm font-medium transition-all ${isActive
+                  ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
+                  : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
                 }`
               }
             >
@@ -91,10 +87,9 @@ export default function Navbar() {
             <NavLink
               to="/map"
               className={({ isActive }) =>
-                `flex items-center space-x-2 px-3.5 py-1.5 rounded-lg text-sm font-medium transition-all ${
-                  isActive
-                    ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
-                    : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
+                `flex items-center space-x-2 px-3.5 py-1.5 rounded-lg text-sm font-medium transition-all ${isActive
+                  ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
+                  : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
                 }`
               }
             >
@@ -105,10 +100,9 @@ export default function Navbar() {
             <NavLink
               to="/data-sources"
               className={({ isActive }) =>
-                `flex items-center space-x-2 px-3.5 py-1.5 rounded-lg text-sm font-medium transition-all ${
-                  isActive
-                    ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
-                    : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
+                `flex items-center space-x-2 px-3.5 py-1.5 rounded-lg text-sm font-medium transition-all ${isActive
+                  ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
+                  : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
                 }`
               }
             >
@@ -119,10 +113,9 @@ export default function Navbar() {
             <NavLink
               to="/precedent-impact"
               className={({ isActive }) =>
-                `flex items-center space-x-2 px-3.5 py-1.5 rounded-lg text-sm font-medium transition-all ${
-                  isActive
-                    ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
-                    : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
+                `flex items-center space-x-2 px-3.5 py-1.5 rounded-lg text-sm font-medium transition-all ${isActive
+                  ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
+                  : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/60'
                 }`
               }
             >
@@ -134,7 +127,7 @@ export default function Navbar() {
           {/* Right Section: Role Selector, Alerts & Theme Toggle */}
           <div className="flex items-center space-x-3 sm:space-x-4">
             <ThemeToggle />
-            
+
             {/* Role Switcher */}
             <div className="relative" ref={roleRef}>
               <button
@@ -159,11 +152,10 @@ export default function Navbar() {
                         setRole(r);
                         setRoleMenuOpen(false);
                       }}
-                      className={`w-full text-left px-3.5 py-2 text-xs font-medium flex items-center justify-between transition-colors ${
-                        role === r
+                      className={`w-full text-left px-3.5 py-2 text-xs font-medium flex items-center justify-between transition-colors ${role === r
                           ? 'bg-indigo-600/20 text-indigo-300 font-semibold'
                           : 'text-slate-300 hover:bg-slate-800'
-                      }`}
+                        }`}
                     >
                       <span>{r}</span>
                       {role === r && <span className="w-1.5 h-1.5 rounded-full bg-indigo-400"></span>}
