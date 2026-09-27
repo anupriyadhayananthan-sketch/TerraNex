@@ -31,7 +31,6 @@ export default function App() {
               <Route path="/map" element={<MapView />} />
               <Route path="/data-sources" element={<DataSources />} />
               <Route path="/precedent-impact" element={<PrecedentImpactSimulator />} />
-              <Route path="/dataset" element={<Dataset />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
