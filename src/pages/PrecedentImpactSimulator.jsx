@@ -42,27 +42,27 @@ import {
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
 function riskColor(score) {
-  if (score >= 70) return 'text-red-400';
-  if (score >= 45) return 'text-amber-400';
-  return 'text-emerald-400';
+  if (score >= 70) return 'text-red-500 dark:text-red-400';
+  if (score >= 45) return 'text-amber-500 dark:text-amber-400';
+  return 'text-emerald-600 dark:text-emerald-400';
 }
 
 function riskBg(score) {
-  if (score >= 70) return 'bg-red-500/10 border-red-500/30 text-red-400';
-  if (score >= 45) return 'bg-amber-500/10 border-amber-500/30 text-amber-400';
-  return 'bg-emerald-500/10 border-emerald-500/30 text-emerald-400';
+  if (score >= 70) return 'bg-red-100 border-red-300 text-red-700 dark:bg-red-500/10 dark:border-red-500/30 dark:text-red-400';
+  if (score >= 45) return 'bg-amber-100 border-amber-300 text-amber-700 dark:bg-amber-500/10 dark:border-amber-500/30 dark:text-amber-400';
+  return 'bg-emerald-100 border-emerald-300 text-emerald-700 dark:bg-emerald-500/10 dark:border-emerald-500/30 dark:text-emerald-400';
 }
 
 function deltaColor(delta) {
-  if (delta > 0) return 'text-emerald-400';
-  if (delta < 0) return 'text-red-400';
-  return 'text-slate-400';
+  if (delta > 0) return 'text-emerald-600 dark:text-emerald-400';
+  if (delta < 0) return 'text-red-600 dark:text-red-400';
+  return 'text-slate-500 dark:text-slate-400';
 }
 
 function deltaBg(delta) {
-  if (delta > 5) return 'bg-emerald-500/15 border-emerald-500/30 text-emerald-400';
-  if (delta < -3) return 'bg-red-500/15 border-red-500/30 text-red-400';
-  return 'bg-slate-700/40 border-slate-600/40 text-slate-400';
+  if (delta > 5) return 'bg-emerald-100 border-emerald-300 text-emerald-700 dark:bg-emerald-500/15 dark:border-emerald-500/30 dark:text-emerald-400';
+  if (delta < -3) return 'bg-red-100 border-red-300 text-red-700 dark:bg-red-500/15 dark:border-red-500/30 dark:text-red-400';
+  return 'bg-slate-100 border-slate-300 text-slate-600 dark:bg-slate-700/40 dark:border-slate-600/40 dark:text-slate-400';
 }
 
 function DeltaIcon({ delta }) {
@@ -73,9 +73,9 @@ function DeltaIcon({ delta }) {
 
 function SimilarityBadge({ score }) {
   const color =
-    score >= 80 ? 'bg-indigo-600/20 border-indigo-500/40 text-indigo-300' :
-    score >= 60 ? 'bg-blue-600/20 border-blue-500/40 text-blue-300' :
-                  'bg-slate-700/40 border-slate-600/40 text-slate-300';
+    score >= 80 ? 'bg-indigo-100 border-indigo-300 text-indigo-700 dark:bg-indigo-600/20 dark:border-indigo-500/40 dark:text-indigo-300' :
+    score >= 60 ? 'bg-blue-100 border-blue-300 text-blue-700 dark:bg-blue-600/20 dark:border-blue-500/40 dark:text-blue-300' :
+                  'bg-slate-100 border-slate-300 text-slate-600 dark:bg-slate-700/40 dark:border-slate-600/40 dark:text-slate-300';
   return (
     <span className={`px-2.5 py-0.5 rounded-full border text-xs font-bold ${color}`}>
       {score}% Match
@@ -85,9 +85,9 @@ function SimilarityBadge({ score }) {
 
 function EvidenceBadge({ strength, count }) {
   const map = {
-    strong: { cls: 'bg-emerald-500/15 border-emerald-500/30 text-emerald-400', label: 'Strong Historical Evidence' },
-    moderate: { cls: 'bg-amber-500/15 border-amber-500/30 text-amber-400', label: 'Moderate Historical Evidence' },
-    limited: { cls: 'bg-slate-700/30 border-slate-600/40 text-slate-400', label: 'Limited Historical Evidence' },
+    strong: { cls: 'bg-emerald-100 border-emerald-300 text-emerald-700 dark:bg-emerald-500/15 dark:border-emerald-500/30 dark:text-emerald-400', label: 'Strong Historical Evidence' },
+    moderate: { cls: 'bg-amber-100 border-amber-300 text-amber-700 dark:bg-amber-500/15 dark:border-amber-500/30 dark:text-amber-400', label: 'Moderate Historical Evidence' },
+    limited: { cls: 'bg-slate-100 border-slate-300 text-slate-600 dark:bg-slate-700/30 dark:border-slate-600/40 dark:text-slate-400', label: 'Limited Historical Evidence' },
   };
   const { cls, label } = map[strength] || map.limited;
   return (
@@ -101,13 +101,13 @@ function EvidenceBadge({ strength, count }) {
 // ─── Section wrapper ──────────────────────────────────────────────────────────
 function Section({ icon, title, subtitle, children, className = '' }) {
   return (
-    <div className={`bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl ${className}`}>
+    <div className={`bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-xl ${className}`}>
       <div className="mb-5">
-        <h2 className="text-base font-bold text-slate-100 flex items-center gap-2">
+        <h2 className="text-base font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2">
           <span className="text-lg">{icon}</span>
           {title}
         </h2>
-        {subtitle && <p className="text-xs text-slate-400 mt-1">{subtitle}</p>}
+        {subtitle && <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">{subtitle}</p>}
       </div>
       {children}
     </div>
@@ -122,12 +122,12 @@ function StakeholderBarRow({ emoji, label, current, simulated, delta, onClick, s
       onClick={onClick}
       className={`w-full text-left p-3.5 rounded-xl border transition-all ${
         selected
-          ? 'bg-indigo-950/50 border-indigo-500/50'
-          : 'bg-slate-950/60 border-slate-800/60 hover:border-slate-700/60 hover:bg-slate-800/30'
+          ? 'bg-indigo-50 border-indigo-400 dark:bg-indigo-950/50 dark:border-indigo-500/50'
+          : 'bg-slate-50 border-slate-200 hover:border-slate-300 hover:bg-slate-100 dark:bg-slate-950/60 dark:border-slate-800/60 dark:hover:border-slate-700/60 dark:hover:bg-slate-800/30'
       }`}
     >
       <div className="flex items-center justify-between mb-2">
-        <span className="text-sm font-semibold text-slate-200 flex items-center gap-1.5">
+        <span className="text-sm font-semibold text-slate-700 dark:text-slate-200 flex items-center gap-1.5">
           <span>{emoji}</span> {label}
         </span>
         <span className={`flex items-center gap-1 text-xs font-bold px-2 py-0.5 rounded border ${deltaBg(delta)}`}>
@@ -138,20 +138,20 @@ function StakeholderBarRow({ emoji, label, current, simulated, delta, onClick, s
 
       {/* Current bar */}
       <div className="flex items-center gap-2 mb-1.5">
-        <span className="text-[10px] text-slate-500 w-16 shrink-0">Current</span>
-        <div className="flex-1 bg-slate-800 rounded-full h-2.5 overflow-hidden">
+        <span className="text-[10px] text-slate-400 dark:text-slate-500 w-16 shrink-0">Current</span>
+        <div className="flex-1 bg-slate-200 dark:bg-slate-800 rounded-full h-2.5 overflow-hidden">
           <div
-            className="h-full bg-slate-600 rounded-full transition-all duration-700"
+            className="h-full bg-slate-400 dark:bg-slate-600 rounded-full transition-all duration-700"
             style={{ width: `${(current / maxVal) * 100}%` }}
           />
         </div>
-        <span className="text-[10px] text-slate-400 w-7 text-right">{current}%</span>
+        <span className="text-[10px] text-slate-500 dark:text-slate-400 w-7 text-right">{current}%</span>
       </div>
 
       {/* Simulated bar */}
       <div className="flex items-center gap-2">
-        <span className="text-[10px] text-slate-500 w-16 shrink-0">Simulated</span>
-        <div className="flex-1 bg-slate-800 rounded-full h-2.5 overflow-hidden">
+        <span className="text-[10px] text-slate-400 dark:text-slate-500 w-16 shrink-0">Simulated</span>
+        <div className="flex-1 bg-slate-200 dark:bg-slate-800 rounded-full h-2.5 overflow-hidden">
           <div
             className={`h-full rounded-full transition-all duration-700 ${
               delta > 5 ? 'bg-emerald-500' : delta < -3 ? 'bg-red-500' : 'bg-indigo-500'
@@ -159,7 +159,7 @@ function StakeholderBarRow({ emoji, label, current, simulated, delta, onClick, s
             style={{ width: `${(simulated / maxVal) * 100}%` }}
           />
         </div>
-        <span className="text-[10px] text-slate-400 w-7 text-right">{simulated}%</span>
+        <span className="text-[10px] text-slate-500 dark:text-slate-400 w-7 text-right">{simulated}%</span>
       </div>
     </button>
   );
@@ -171,27 +171,27 @@ function HistoricalCaseCard({ caseNum, similarity, matchedFactors, unmatchedFact
   const riskCat = project.risk_category || 'Medium';
 
   return (
-    <div className="bg-slate-950/70 border border-slate-800/60 rounded-xl overflow-hidden">
+    <div className="bg-slate-50 dark:bg-slate-950/70 border border-slate-200 dark:border-slate-800/60 rounded-xl overflow-hidden">
       {/* Header */}
       <button
         onClick={onToggle}
-        className="w-full text-left p-4 flex items-start justify-between hover:bg-slate-800/30 transition-colors"
+        className="w-full text-left p-4 flex items-start justify-between hover:bg-slate-100 dark:hover:bg-slate-800/30 transition-colors"
       >
         <div className="flex-1 min-w-0 mr-3">
           <div className="flex items-center gap-2 flex-wrap mb-1">
-            <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Case #{caseNum}</span>
+            <span className="text-[11px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">Case #{caseNum}</span>
             <SimilarityBadge score={similarity} />
             <span className={`text-[10px] px-2 py-0.5 rounded border font-semibold ${riskBg(project.overall_risk_score)}`}>
               {riskCat} Risk
             </span>
           </div>
-          <h3 className="text-sm font-bold text-slate-200 truncate">{project.name}</h3>
-          <p className="text-xs text-slate-400 mt-0.5">{project.district}, {project.state} · {project.project_type}</p>
+          <h3 className="text-sm font-bold text-slate-700 dark:text-slate-200 truncate">{project.name}</h3>
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">{project.district}, {project.state} · {project.project_type}</p>
         </div>
         <div className="flex items-center gap-2 shrink-0">
           <div className="text-right hidden sm:block">
-            <div className="text-[10px] text-slate-500">Resolution</div>
-            <div className="text-xs font-bold text-indigo-400">{record.resolutionDays}d</div>
+            <div className="text-[10px] text-slate-400 dark:text-slate-500">Resolution</div>
+            <div className="text-xs font-bold text-indigo-600 dark:text-indigo-400">{record.resolutionDays}d</div>
           </div>
           {expanded ? <ChevronUp className="w-4 h-4 text-slate-400" /> : <ChevronDown className="w-4 h-4 text-slate-400" />}
         </div>
@@ -199,29 +199,29 @@ function HistoricalCaseCard({ caseNum, similarity, matchedFactors, unmatchedFact
 
       {/* Expanded body */}
       {expanded && (
-        <div className="px-4 pb-4 border-t border-slate-800/60 pt-3 space-y-4">
+        <div className="px-4 pb-4 border-t border-slate-200 dark:border-slate-800/60 pt-3 space-y-4">
           {/* Grid: Problem / Action / Outcome */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            <div className="bg-red-950/20 border border-red-900/30 rounded-lg p-3">
-              <div className="text-[10px] font-bold text-red-400 uppercase tracking-wider mb-1">⚠ Problem</div>
-              <p className="text-xs text-slate-300">{record.problem}</p>
+            <div className="bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-900/30 rounded-lg p-3">
+              <div className="text-[10px] font-bold text-red-600 dark:text-red-400 uppercase tracking-wider mb-1">⚠ Problem</div>
+              <p className="text-xs text-slate-700 dark:text-slate-300">{record.problem}</p>
             </div>
-            <div className="bg-indigo-950/20 border border-indigo-900/30 rounded-lg p-3">
-              <div className="text-[10px] font-bold text-indigo-400 uppercase tracking-wider mb-1">⚡ Action Taken</div>
-              <p className="text-xs text-slate-300">{record.actionTaken}</p>
+            <div className="bg-indigo-50 dark:bg-indigo-950/20 border border-indigo-200 dark:border-indigo-900/30 rounded-lg p-3">
+              <div className="text-[10px] font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider mb-1">⚡ Action Taken</div>
+              <p className="text-xs text-slate-700 dark:text-slate-300">{record.actionTaken}</p>
             </div>
-            <div className={`border rounded-lg p-3 ${record.improved ? 'bg-emerald-950/20 border-emerald-900/30' : 'bg-amber-950/20 border-amber-900/30'}`}>
-              <div className={`text-[10px] font-bold uppercase tracking-wider mb-1 ${record.improved ? 'text-emerald-400' : 'text-amber-400'}`}>
+            <div className={`border rounded-lg p-3 ${record.improved ? 'bg-emerald-50 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-900/30' : 'bg-amber-50 dark:bg-amber-950/20 border-amber-200 dark:border-amber-900/30'}`}>
+              <div className={`text-[10px] font-bold uppercase tracking-wider mb-1 ${record.improved ? 'text-emerald-600 dark:text-emerald-400' : 'text-amber-600 dark:text-amber-400'}`}>
                 {record.improved ? '✓ Outcome' : '~ Outcome'}
               </div>
-              <p className="text-xs text-slate-300">{record.outcome}</p>
+              <p className="text-xs text-slate-700 dark:text-slate-300">{record.outcome}</p>
             </div>
           </div>
 
           {/* Timeline */}
-          <div className="flex items-center gap-2 text-xs text-slate-400">
-            <Clock className="w-3.5 h-3.5 text-indigo-400 shrink-0" />
-            <span className="font-medium text-indigo-300">Timeline: </span>
+          <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
+            <Clock className="w-3.5 h-3.5 text-indigo-500 dark:text-indigo-400 shrink-0" />
+            <span className="font-medium text-indigo-600 dark:text-indigo-300">Timeline: </span>
             Day 0 → Problem identified
             <ArrowRight className="w-3 h-3" />
             Day {Math.round(record.resolutionDays * 0.3)} → Intervention
@@ -233,17 +233,17 @@ function HistoricalCaseCard({ caseNum, similarity, matchedFactors, unmatchedFact
 
           {/* Why this case matched */}
           <div>
-            <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-2">
+            <div className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-2">
               Why this case matched — {similarity}% similarity
             </div>
             <div className="flex flex-wrap gap-1.5">
               {matchedFactors.map((f, i) => (
-                <span key={i} className="flex items-center gap-1 text-[10px] font-medium bg-emerald-950/30 border border-emerald-800/40 text-emerald-400 px-2 py-0.5 rounded-full">
+                <span key={i} className="flex items-center gap-1 text-[10px] font-medium bg-emerald-100 dark:bg-emerald-950/30 border border-emerald-300 dark:border-emerald-800/40 text-emerald-700 dark:text-emerald-400 px-2 py-0.5 rounded-full">
                   <CheckCircle2 className="w-2.5 h-2.5" /> {f}
                 </span>
               ))}
               {unmatchedFactors.slice(0, 2).map((f, i) => (
-                <span key={i} className="flex items-center gap-1 text-[10px] font-medium bg-slate-800/40 border border-slate-700/40 text-slate-500 px-2 py-0.5 rounded-full">
+                <span key={i} className="flex items-center gap-1 text-[10px] font-medium bg-slate-100 dark:bg-slate-800/40 border border-slate-300 dark:border-slate-700/40 text-slate-500 dark:text-slate-500 px-2 py-0.5 rounded-full">
                   <XCircle className="w-2.5 h-2.5" /> {f}
                 </span>
               ))}
@@ -252,17 +252,17 @@ function HistoricalCaseCard({ caseNum, similarity, matchedFactors, unmatchedFact
 
           {/* Metrics row */}
           <div className="grid grid-cols-3 gap-2">
-            <div className="text-center bg-slate-900/60 rounded-lg p-2">
-              <div className="text-[10px] text-slate-500">Risk Score</div>
+            <div className="text-center bg-slate-100 dark:bg-slate-900/60 rounded-lg p-2">
+              <div className="text-[10px] text-slate-400 dark:text-slate-500">Risk Score</div>
               <div className={`text-sm font-bold ${riskColor(project.overall_risk_score)}`}>{project.overall_risk_score}%</div>
             </div>
-            <div className="text-center bg-slate-900/60 rounded-lg p-2">
-              <div className="text-[10px] text-slate-500">Comp. Disbursed</div>
-              <div className="text-sm font-bold text-slate-200">{project.compensation_disbursed_pct}%</div>
+            <div className="text-center bg-slate-100 dark:bg-slate-900/60 rounded-lg p-2">
+              <div className="text-[10px] text-slate-400 dark:text-slate-500">Comp. Disbursed</div>
+              <div className="text-sm font-bold text-slate-700 dark:text-slate-200">{project.compensation_disbursed_pct}%</div>
             </div>
-            <div className="text-center bg-slate-900/60 rounded-lg p-2">
-              <div className="text-[10px] text-slate-500">Resolution</div>
-              <div className="text-sm font-bold text-indigo-400">{record.resolutionDays} days</div>
+            <div className="text-center bg-slate-100 dark:bg-slate-900/60 rounded-lg p-2">
+              <div className="text-[10px] text-slate-400 dark:text-slate-500">Resolution</div>
+              <div className="text-sm font-bold text-indigo-600 dark:text-indigo-400">{record.resolutionDays} days</div>
             </div>
           </div>
         </div>
@@ -359,16 +359,16 @@ export default function PrecedentImpactSimulator() {
       {/* ── Page Header ──────────────────────────────────────────────────────── */}
       <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
         <div>
-          <h1 className="text-2xl sm:text-3xl font-black text-slate-100 tracking-tight flex items-center gap-3">
+          <h1 className="text-2xl sm:text-3xl font-black text-slate-800 dark:text-slate-100 tracking-tight flex items-center gap-3">
             <span className="text-3xl">📊</span>
             Historical Precedent &amp; Impact Simulator
           </h1>
-          <p className="text-sm text-slate-400 mt-1.5 max-w-2xl">
+          <p className="text-sm text-slate-500 dark:text-slate-400 mt-1.5 max-w-2xl">
             Find historically similar cases, understand what interventions worked, and simulate stakeholder impacts — supporting officer decision-making with evidence.
           </p>
         </div>
         <div className="shrink-0">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-indigo-950/60 border border-indigo-700/40 rounded-xl text-xs font-semibold text-indigo-300">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-200 dark:border-indigo-700/40 rounded-xl text-xs font-semibold text-indigo-700 dark:text-indigo-300">
             <BarChart3 className="w-3.5 h-3.5" />
             Decision-Support System
           </span>
@@ -376,12 +376,12 @@ export default function PrecedentImpactSimulator() {
       </div>
 
       {/* ── Disclaimer ────────────────────────────────────────────────────────── */}
-      <div className="flex items-start gap-2.5 bg-slate-900/60 border border-slate-700/50 rounded-xl px-4 py-3 text-xs text-slate-400">
-        <Info className="w-4 h-4 text-indigo-400 shrink-0 mt-0.5" />
+      <div className="flex items-start gap-2.5 bg-slate-100 dark:bg-slate-900/60 border border-slate-300 dark:border-slate-700/50 rounded-xl px-4 py-3 text-xs text-slate-600 dark:text-slate-400">
+        <Info className="w-4 h-4 text-indigo-500 dark:text-indigo-400 shrink-0 mt-0.5" />
         <p>
           Historical cases are used to identify similar situations and previous interventions. Stakeholder impacts are
           scenario-based estimates and should not be interpreted as guaranteed outcomes.{' '}
-          <strong className="text-slate-300">The officer always makes the final decision.</strong>
+          <strong className="text-slate-700 dark:text-slate-300">The officer always makes the final decision.</strong>
         </p>
       </div>
 
@@ -389,7 +389,7 @@ export default function PrecedentImpactSimulator() {
       <Section icon="📁" title="Current Project" subtitle="Select a project to analyse its historical precedents and simulate interventions.">
         {/* Project selector */}
         <div className="mb-5">
-          <label className="block text-xs font-semibold text-slate-400 mb-2">Select Project</label>
+          <label className="block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-2">Select Project</label>
           <select
             value={selectedProjectId}
             onChange={(e) => {
@@ -398,7 +398,7 @@ export default function PrecedentImpactSimulator() {
               setCompareActions([]);
               setSelectedStakeholder(null);
             }}
-            className="w-full bg-slate-800 border border-slate-700 text-slate-200 text-sm rounded-xl px-3 py-2.5 focus:outline-none focus:border-indigo-500 transition-colors"
+            className="w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-800 dark:text-slate-200 text-sm rounded-xl px-3 py-2.5 focus:outline-none focus:border-indigo-500 transition-colors"
           >
             {allProjects.map((p) => (
               <option key={p.id} value={p.id}>{p.id} — {p.name} ({p.state})</option>
@@ -409,23 +409,23 @@ export default function PrecedentImpactSimulator() {
         {currentProject && (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {/* Project info */}
-            <div className="lg:col-span-2 bg-slate-950/60 border border-slate-800/60 rounded-xl p-4">
-              <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">{currentProject.id}</div>
-              <h3 className="text-sm font-bold text-slate-100 mb-0.5">{currentProject.name}</h3>
-              <p className="text-xs text-slate-400">{currentProject.district}, {currentProject.state}</p>
+            <div className="lg:col-span-2 bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/60 rounded-xl p-4">
+              <div className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-1">{currentProject.id}</div>
+              <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100 mb-0.5">{currentProject.name}</h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400">{currentProject.district}, {currentProject.state}</p>
               <div className="flex flex-wrap gap-1.5 mt-2">
-                <span className="text-[10px] px-2 py-0.5 bg-slate-800 text-slate-300 rounded-full border border-slate-700">
+                <span className="text-[10px] px-2 py-0.5 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-full border border-slate-200 dark:border-slate-700">
                   {currentProject.project_type}
                 </span>
-                <span className="text-[10px] px-2 py-0.5 bg-slate-800 text-slate-300 rounded-full border border-slate-700">
+                <span className="text-[10px] px-2 py-0.5 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-full border border-slate-200 dark:border-slate-700">
                   Stage: {currentProject.current_stage}
                 </span>
               </div>
             </div>
 
             {/* Risk */}
-            <div className="bg-slate-950/60 border border-slate-800/60 rounded-xl p-4 flex flex-col items-center justify-center">
-              <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1">Risk Score</div>
+            <div className="bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/60 rounded-xl p-4 flex flex-col items-center justify-center">
+              <div className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-1">Risk Score</div>
               <div className={`text-3xl font-black ${riskColor(currentProject.overall_risk_score)}`}>
                 {currentProject.overall_risk_score}%
               </div>
@@ -435,16 +435,16 @@ export default function PrecedentImpactSimulator() {
             </div>
 
             {/* Top drivers */}
-            <div className="bg-slate-950/60 border border-slate-800/60 rounded-xl p-4">
-              <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-2">Top Drivers</div>
+            <div className="bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/60 rounded-xl p-4">
+              <div className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-2">Top Drivers</div>
               <div className="space-y-1.5">
                 {topDrivers.map((d, i) => (
                   <div key={i} className="flex items-start gap-1.5">
-                    <span className="text-[10px] font-bold text-indigo-400 mt-0.5">{i + 1}.</span>
-                    <span className="text-[11px] text-slate-300 leading-snug">{d.factor}</span>
+                    <span className="text-[10px] font-bold text-indigo-500 dark:text-indigo-400 mt-0.5">{i + 1}.</span>
+                    <span className="text-[11px] text-slate-700 dark:text-slate-300 leading-snug">{d.factor}</span>
                   </div>
                 ))}
-                {topDrivers.length === 0 && <span className="text-[11px] text-slate-500">No drivers recorded</span>}
+                {topDrivers.length === 0 && <span className="text-[11px] text-slate-400 dark:text-slate-500">No drivers recorded</span>}
               </div>
             </div>
           </div>
@@ -458,7 +458,7 @@ export default function PrecedentImpactSimulator() {
         subtitle={`Comparing current project against ${allProjects.length - 1} historical projects by driver profile, project type, risk level, and compensation status.`}
       >
         {similarCases.length === 0 ? (
-          <div className="text-center py-8 text-slate-500 text-sm">
+          <div className="text-center py-8 text-slate-400 dark:text-slate-500 text-sm">
             <AlertTriangle className="w-8 h-8 mx-auto mb-2 text-amber-500/50" />
             No sufficiently similar historical cases found (≥30% threshold).
           </div>
@@ -488,38 +488,41 @@ export default function PrecedentImpactSimulator() {
           subtitle="Aggregated intervention patterns from historically similar cases."
         >
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-5">
-            <div className="bg-slate-950/60 border border-slate-800/60 rounded-xl p-4 text-center">
-              <div className="text-[10px] text-slate-500 mb-1">Similar Cases Found</div>
-              <div className="text-3xl font-black text-indigo-400">{similarCases.length}</div>
+            {/* KPI: Similar Cases Found */}
+            <div className="bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/60 rounded-xl p-4 text-center" data-testid="kpi-similar-cases">
+              <div className="text-[10px] text-slate-500 dark:text-slate-500 mb-1">Similar Cases Found</div>
+              <div className="text-3xl font-black text-indigo-600 dark:text-indigo-400">{similarCases.length}</div>
             </div>
-            <div className="bg-slate-950/60 border border-slate-800/60 rounded-xl p-4 text-center">
-              <div className="text-[10px] text-slate-500 mb-1">Showing Improvement</div>
+            {/* KPI: Showing Improvement */}
+            <div className="bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/60 rounded-xl p-4 text-center" data-testid="kpi-improvement">
+              <div className="text-[10px] text-slate-500 dark:text-slate-500 mb-1">Showing Improvement</div>
               {whatWorkedBefore.total > 0 ? (
-                <div className="text-3xl font-black text-emerald-400">
+                <div className="text-3xl font-black text-emerald-600 dark:text-emerald-400">
                   {whatWorkedBefore.improvedCount}/{whatWorkedBefore.total}
                 </div>
               ) : (
-                <div className="text-xs text-slate-500 mt-2">Limited historical evidence</div>
+                <div className="text-xs text-slate-400 dark:text-slate-500 mt-2">Limited historical evidence</div>
               )}
             </div>
-            <div className="bg-slate-950/60 border border-slate-800/60 rounded-xl p-4 text-center">
-              <div className="text-[10px] text-slate-500 mb-1">Best Match</div>
-              <div className="text-xl font-black text-indigo-300">{similarCases[0]?.similarity}%</div>
-              <div className="text-[10px] text-slate-400 mt-0.5 truncate">{similarCases[0]?.project?.name}</div>
+            {/* KPI: Best Match */}
+            <div className="bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/60 rounded-xl p-4 text-center" data-testid="kpi-best-match">
+              <div className="text-[10px] text-slate-500 dark:text-slate-500 mb-1">Best Match</div>
+              <div className="text-xl font-black text-indigo-700 dark:text-indigo-300">{similarCases[0]?.similarity}%</div>
+              <div className="text-[10px] text-slate-400 dark:text-slate-400 mt-0.5 truncate">{similarCases[0]?.project?.name}</div>
             </div>
           </div>
 
           {whatWorkedBefore.sorted.length > 0 ? (
             <div>
-              <div className="text-xs font-semibold text-slate-400 mb-3">Most Frequently Used Interventions</div>
+              <div className="text-xs font-semibold text-slate-500 dark:text-slate-400 mb-3">Most Frequently Used Interventions</div>
               <div className="space-y-2">
                 {whatWorkedBefore.sorted.map(([action, count], i) => (
-                  <div key={i} className="flex items-center gap-3 bg-slate-950/50 border border-slate-800/40 rounded-lg p-3">
-                    <span className="text-lg font-black text-indigo-400">{i + 1}</span>
+                  <div key={i} className="flex items-center gap-3 bg-slate-100 dark:bg-slate-950/50 border border-slate-200 dark:border-slate-800/40 rounded-lg p-3" data-testid="intervention-list-row">
+                    <span className="text-lg font-black text-indigo-600 dark:text-indigo-400">{i + 1}</span>
                     <div className="flex-1 min-w-0">
-                      <p className="text-xs font-medium text-slate-200 truncate">{action}</p>
+                      <p className="text-xs font-medium text-slate-700 dark:text-slate-200 truncate">{action}</p>
                     </div>
-                    <span className="text-[11px] font-bold text-indigo-300 shrink-0">
+                    <span className="text-[11px] font-bold text-indigo-600 dark:text-indigo-300 shrink-0">
                       {count} of {whatWorkedBefore.total} cases
                     </span>
                   </div>
@@ -527,7 +530,7 @@ export default function PrecedentImpactSimulator() {
               </div>
             </div>
           ) : (
-            <p className="text-xs text-slate-500 italic">Limited historical evidence — insufficient data to determine frequent interventions.</p>
+            <p className="text-xs text-slate-400 dark:text-slate-500 italic">Limited historical evidence — insufficient data to determine frequent interventions.</p>
           )}
         </Section>
       )}
@@ -542,13 +545,13 @@ export default function PrecedentImpactSimulator() {
         <div className="flex gap-2 mb-5">
           <button
             onClick={() => { setCompareMode(false); setCompareActions([]); }}
-            className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all border ${!compareMode ? 'bg-indigo-600 border-indigo-500 text-white' : 'bg-slate-800 border-slate-700 text-slate-300 hover:bg-slate-700'}`}
+            className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all border ${!compareMode ? 'bg-indigo-600 border-indigo-500 text-white' : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700'}`}
           >
             Single Action
           </button>
           <button
             onClick={() => { setCompareMode(true); setPrimaryAction(null); setSelectedStakeholder(null); }}
-            className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all border ${compareMode ? 'bg-indigo-600 border-indigo-500 text-white' : 'bg-slate-800 border-slate-700 text-slate-300 hover:bg-slate-700'}`}
+            className={`px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all border ${compareMode ? 'bg-indigo-600 border-indigo-500 text-white' : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700'}`}
           >
             ⚖️ Compare Actions (up to 4)
           </button>
@@ -562,6 +565,7 @@ export default function PrecedentImpactSimulator() {
             return (
               <button
                 key={action.id}
+                data-testid={`action-card-${action.id}`}
                 onClick={() => {
                   if (compareMode) {
                     toggleCompareAction(action.id);
@@ -572,15 +576,15 @@ export default function PrecedentImpactSimulator() {
                 }}
                 className={`text-left p-3.5 rounded-xl border transition-all ${
                   isSelected
-                    ? 'bg-indigo-950/60 border-indigo-500/60 shadow-lg shadow-indigo-900/20'
-                    : 'bg-slate-950/50 border-slate-800/50 hover:border-slate-700 hover:bg-slate-800/30'
+                    ? 'bg-indigo-50 dark:bg-indigo-950/60 border-indigo-400 dark:border-indigo-500/60 shadow-lg shadow-indigo-200/30 dark:shadow-indigo-900/20'
+                    : 'bg-white dark:bg-slate-950/50 border-slate-200 dark:border-slate-800/50 hover:border-slate-300 dark:hover:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/30'
                 }`}
               >
                 <div className="text-xl mb-1.5">{action.icon}</div>
-                <div className="text-xs font-bold text-slate-200 mb-1">{action.label}</div>
-                <div className="text-[10px] text-slate-500 leading-snug">{action.description}</div>
+                <div className="text-xs font-bold text-slate-800 dark:text-slate-200 mb-1">{action.label}</div>
+                <div className="text-[10px] text-slate-500 dark:text-slate-500 leading-snug">{action.description}</div>
                 {isSelected && (
-                  <div className="mt-2 text-[10px] font-bold text-indigo-400">✓ Selected</div>
+                  <div className="mt-2 text-[10px] font-bold text-indigo-600 dark:text-indigo-400">✓ Selected</div>
                 )}
               </button>
             );
@@ -602,21 +606,21 @@ export default function PrecedentImpactSimulator() {
           {/* Evidence → Simulation bridge */}
           {topSimilar && topRecord && (
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-              <div className="bg-indigo-950/25 border border-indigo-800/30 rounded-xl p-4">
-                <div className="text-[10px] font-bold text-indigo-400 uppercase tracking-wider mb-2">📚 Historical Evidence</div>
-                <div className="text-[11px] text-slate-400 mb-1">{topSimilar.similarity}% Similar Case</div>
-                <div className="text-xs font-bold text-slate-200 mb-1">{topSimilar.project.name}</div>
-                <div className="text-[11px] text-slate-400">Previous action: <span className="text-slate-300 font-medium">{topRecord.actionTaken}</span></div>
-                <div className="text-[11px] text-slate-400 mt-0.5">Outcome: <span className="text-emerald-400 font-medium">{topRecord.outcome}</span></div>
-                <div className="text-[11px] text-slate-400 mt-0.5">Resolved in: <span className="text-indigo-400 font-medium">{topRecord.resolutionDays} days</span></div>
+              <div className="bg-indigo-50 dark:bg-indigo-950/25 border border-indigo-200 dark:border-indigo-800/30 rounded-xl p-4">
+                <div className="text-[10px] font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider mb-2">📚 Historical Evidence</div>
+                <div className="text-[11px] text-slate-500 dark:text-slate-400 mb-1">{topSimilar.similarity}% Similar Case</div>
+                <div className="text-xs font-bold text-slate-700 dark:text-slate-200 mb-1">{topSimilar.project.name}</div>
+                <div className="text-[11px] text-slate-500 dark:text-slate-400">Previous action: <span className="text-slate-700 dark:text-slate-300 font-medium">{topRecord.actionTaken}</span></div>
+                <div className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">Outcome: <span className="text-emerald-600 dark:text-emerald-400 font-medium">{topRecord.outcome}</span></div>
+                <div className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">Resolved in: <span className="text-indigo-600 dark:text-indigo-400 font-medium">{topRecord.resolutionDays} days</span></div>
               </div>
-              <div className="bg-emerald-950/20 border border-emerald-800/30 rounded-xl p-4">
-                <div className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider mb-2">⚡ Current Simulation</div>
-                <div className="text-[11px] text-slate-400 mb-1">Proposed action: <span className="text-slate-300 font-medium">{primaryImpact.action.label}</span></div>
+              <div className="bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/30 rounded-xl p-4">
+                <div className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider mb-2">⚡ Current Simulation</div>
+                <div className="text-[11px] text-slate-500 dark:text-slate-400 mb-1">Proposed action: <span className="text-slate-700 dark:text-slate-300 font-medium">{primaryImpact.action.label}</span></div>
                 <div className="space-y-1 mt-2">
                   {stakeholders.map((key) => (
                     <div key={key} className="flex items-center justify-between text-[11px]">
-                      <span className="text-slate-400">{stakeholderMeta[key].emoji} {stakeholderMeta[key].label.split(' /')[0]}</span>
+                      <span className="text-slate-500 dark:text-slate-400">{stakeholderMeta[key].emoji} {stakeholderMeta[key].label.split(' /')[0]}</span>
                       <span className={`font-bold ${deltaColor(primaryImpact[key].delta)}`}>
                         {primaryImpact[key].delta > 0 ? '+' : ''}{primaryImpact[key].delta}
                       </span>
@@ -644,8 +648,8 @@ export default function PrecedentImpactSimulator() {
           </div>
 
           {/* Legend */}
-          <div className="flex items-center gap-4 text-[10px] text-slate-500 border-t border-slate-800/60 pt-3">
-            <div className="flex items-center gap-1.5"><div className="w-3 h-2 rounded-full bg-slate-600" /> Current condition</div>
+          <div className="flex items-center gap-4 text-[10px] text-slate-500 dark:text-slate-500 border-t border-slate-200 dark:border-slate-800/60 pt-3">
+            <div className="flex items-center gap-1.5"><div className="w-3 h-2 rounded-full bg-slate-400 dark:bg-slate-600" /> Current condition</div>
             <div className="flex items-center gap-1.5"><div className="w-3 h-2 rounded-full bg-emerald-500" /> Positive impact</div>
             <div className="flex items-center gap-1.5"><div className="w-3 h-2 rounded-full bg-red-500" /> Negative impact</div>
             <div className="flex items-center gap-1.5"><div className="w-3 h-2 rounded-full bg-indigo-500" /> Neutral/small change</div>
@@ -653,9 +657,9 @@ export default function PrecedentImpactSimulator() {
 
           {/* ── 6. STAKEHOLDER DETAIL PANEL ─────────────────────────────────── */}
           {selectedStakeholder && primaryImpact[selectedStakeholder] && (
-            <div className="mt-5 bg-slate-950/70 border border-indigo-800/40 rounded-xl p-5">
+            <div className="mt-5 bg-slate-50 dark:bg-slate-950/70 border border-indigo-200 dark:border-indigo-800/40 rounded-xl p-5">
               <div className="flex items-center justify-between mb-3">
-                <h3 className="text-sm font-bold text-slate-100 flex items-center gap-2">
+                <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2">
                   <span className="text-xl">{stakeholderMeta[selectedStakeholder].emoji}</span>
                   {primaryImpact[selectedStakeholder].label}
                 </h3>
@@ -663,11 +667,11 @@ export default function PrecedentImpactSimulator() {
                   Impact: {primaryImpact[selectedStakeholder].delta > 0 ? '+' : ''}{primaryImpact[selectedStakeholder].delta}
                 </span>
               </div>
-              <div className="text-xs font-semibold text-slate-500 mb-2">Why this stakeholder is affected:</div>
+              <div className="text-xs font-semibold text-slate-400 dark:text-slate-500 mb-2">Why this stakeholder is affected:</div>
               <ul className="space-y-1.5">
                 {primaryImpact[selectedStakeholder].reasons.map((r, i) => (
-                  <li key={i} className="flex items-start gap-2 text-xs text-slate-300">
-                    <span className="text-indigo-400 mt-0.5 shrink-0">•</span>
+                  <li key={i} className="flex items-start gap-2 text-xs text-slate-700 dark:text-slate-300">
+                    <span className="text-indigo-500 dark:text-indigo-400 mt-0.5 shrink-0">•</span>
                     {r}
                   </li>
                 ))}
@@ -711,11 +715,11 @@ export default function PrecedentImpactSimulator() {
           </div>
 
           {/* Table */}
-          <div className="overflow-x-auto rounded-xl border border-slate-800/60">
+          <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800/60">
             <table className="w-full text-xs">
               <thead>
-                <tr className="bg-slate-800/60">
-                  <th className="text-left px-4 py-2.5 text-slate-400 font-semibold">Stakeholder</th>
+                <tr className="bg-slate-100 dark:bg-slate-800/60">
+                  <th className="text-left px-4 py-2.5 text-slate-500 dark:text-slate-400 font-semibold">Stakeholder</th>
                   {compareImpacts.map((imp, idx) => (
                     <th key={imp.action.id} className="text-center px-4 py-2.5 font-semibold" style={{ color: COMPARE_COLORS[idx] }}>
                       {imp.action.icon} {imp.action.shortLabel}
@@ -723,10 +727,10 @@ export default function PrecedentImpactSimulator() {
                   ))}
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-800/40">
+              <tbody className="divide-y divide-slate-200 dark:divide-slate-800/40">
                 {stakeholders.map((key) => (
-                  <tr key={key} className="bg-slate-950/40 hover:bg-slate-800/20 transition-colors">
-                    <td className="px-4 py-3 font-semibold text-slate-200">
+                  <tr key={key} className="bg-white dark:bg-slate-950/40 hover:bg-slate-50 dark:hover:bg-slate-800/20 transition-colors">
+                    <td className="px-4 py-3 font-semibold text-slate-700 dark:text-slate-200">
                       {stakeholderMeta[key].emoji} {stakeholderMeta[key].label}
                     </td>
                     {compareImpacts.map((imp, idx) => {
@@ -738,7 +742,7 @@ export default function PrecedentImpactSimulator() {
                               {d > 0 ? '+' : ''}{d}
                             </span>
                             {/* Mini bar */}
-                            <div className="w-16 bg-slate-800 rounded-full h-1.5 overflow-hidden">
+                            <div className="w-16 bg-slate-200 dark:bg-slate-800 rounded-full h-1.5 overflow-hidden">
                               <div
                                 className="h-full rounded-full transition-all"
                                 style={{
@@ -759,7 +763,7 @@ export default function PrecedentImpactSimulator() {
           </div>
 
           {/* Trade-off note */}
-          <div className="mt-4 flex items-start gap-2 bg-amber-950/20 border border-amber-800/30 rounded-lg px-3 py-2.5 text-xs text-amber-300">
+          <div className="mt-4 flex items-start gap-2 bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/30 rounded-lg px-3 py-2.5 text-xs text-amber-700 dark:text-amber-300">
             <AlertTriangle className="w-3.5 h-3.5 shrink-0 mt-0.5" />
             <p>
               The table shows projected impact deltas per stakeholder group. Positive values (+) indicate improvement in stakeholder wellbeing.
@@ -775,39 +779,39 @@ export default function PrecedentImpactSimulator() {
           icon="📋"
           title="Decision Support Summary"
           subtitle="A structured overview of available evidence and simulated outcomes to support officer decision-making."
-          className="border-indigo-800/30"
+          className="border-indigo-300 dark:border-indigo-800/30"
         >
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5">
-            <div className="bg-slate-950/60 border border-slate-800/50 rounded-xl p-3 text-center">
-              <div className="text-[10px] text-slate-500 mb-1">Similar Cases</div>
-              <div className="text-2xl font-black text-indigo-400">{similarCases.length}</div>
+            <div className="bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/50 rounded-xl p-3 text-center">
+              <div className="text-[10px] text-slate-500 dark:text-slate-500 mb-1">Similar Cases</div>
+              <div className="text-2xl font-black text-indigo-600 dark:text-indigo-400">{similarCases.length}</div>
             </div>
-            <div className="bg-slate-950/60 border border-slate-800/50 rounded-xl p-3 text-center">
-              <div className="text-[10px] text-slate-500 mb-1">Best Match</div>
-              <div className="text-lg font-black text-indigo-300">{similarCases[0]?.similarity || 0}%</div>
-              <div className="text-[10px] text-slate-500 truncate mt-0.5">{similarCases[0]?.project?.name}</div>
+            <div className="bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/50 rounded-xl p-3 text-center">
+              <div className="text-[10px] text-slate-500 dark:text-slate-500 mb-1">Best Match</div>
+              <div className="text-lg font-black text-indigo-700 dark:text-indigo-300">{similarCases[0]?.similarity || 0}%</div>
+              <div className="text-[10px] text-slate-400 dark:text-slate-500 truncate mt-0.5">{similarCases[0]?.project?.name}</div>
             </div>
-            <div className="bg-slate-950/60 border border-slate-800/50 rounded-xl p-3 text-center">
-              <div className="text-[10px] text-slate-500 mb-1">Prev. Action</div>
-              <div className="text-[11px] font-bold text-slate-300 leading-snug">{topRecord?.actionTaken?.split(' ').slice(0, 4).join(' ') || '—'}…</div>
+            <div className="bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/50 rounded-xl p-3 text-center">
+              <div className="text-[10px] text-slate-500 dark:text-slate-500 mb-1">Prev. Action</div>
+              <div className="text-[11px] font-bold text-slate-700 dark:text-slate-300 leading-snug">{topRecord?.actionTaken?.split(' ').slice(0, 4).join(' ') || '—'}…</div>
             </div>
-            <div className="bg-slate-950/60 border border-slate-800/50 rounded-xl p-3 text-center">
-              <div className="text-[10px] text-slate-500 mb-1">Hist. Outcome</div>
-              <div className="text-[11px] font-bold text-emerald-400 leading-snug">{topRecord?.outcome?.split(';')[0] || '—'}</div>
+            <div className="bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/50 rounded-xl p-3 text-center">
+              <div className="text-[10px] text-slate-500 dark:text-slate-500 mb-1">Hist. Outcome</div>
+              <div className="text-[11px] font-bold text-emerald-600 dark:text-emerald-400 leading-snug">{topRecord?.outcome?.split(';')[0] || '—'}</div>
             </div>
           </div>
 
           {/* Current simulated summary */}
           {primaryImpact && !compareMode && (
-            <div className="bg-slate-950/60 border border-slate-800/50 rounded-xl p-4 mb-4">
-              <div className="text-xs font-semibold text-slate-400 mb-3">
+            <div className="bg-slate-100 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800/50 rounded-xl p-4 mb-4">
+              <div className="text-xs font-semibold text-slate-500 dark:text-slate-400 mb-3">
                 Simulated Impact — {primaryImpact.action.label}
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {stakeholders.map((key) => (
                   <div key={key} className="text-center">
                     <div className="text-base">{stakeholderMeta[key].emoji}</div>
-                    <div className="text-[10px] text-slate-500 mt-0.5">{stakeholderMeta[key].label.split(' /')[0]}</div>
+                    <div className="text-[10px] text-slate-400 dark:text-slate-500 mt-0.5">{stakeholderMeta[key].label.split(' /')[0]}</div>
                     <div className={`text-lg font-black mt-1 ${deltaColor(primaryImpact[key].delta)}`}>
                       {primaryImpact[key].delta > 0 ? '+' : ''}{primaryImpact[key].delta}
                     </div>
@@ -823,9 +827,9 @@ export default function PrecedentImpactSimulator() {
             const positives = stakeholders.filter((k) => primaryImpact[k].delta > 5);
             if (negatives.length > 0 && positives.length > 0) {
               return (
-                <div className="mb-4 bg-amber-950/20 border border-amber-800/30 rounded-xl px-4 py-3">
-                  <div className="text-xs font-bold text-amber-400 mb-1">⚠ Trade-off Identified</div>
-                  <p className="text-xs text-slate-300">
+                <div className="mb-4 bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/30 rounded-xl px-4 py-3">
+                  <div className="text-xs font-bold text-amber-600 dark:text-amber-400 mb-1">⚠ Trade-off Identified</div>
+                  <p className="text-xs text-slate-700 dark:text-slate-300">
                     The proposed action may improve conditions for{' '}
                     <strong>{positives.map((k) => stakeholderMeta[k].label.split(' /')[0]).join(', ')}</strong>{' '}
                     while increasing burden on{' '}
@@ -839,10 +843,10 @@ export default function PrecedentImpactSimulator() {
           })()}
 
           {/* Important note */}
-          <div className="bg-indigo-950/30 border border-indigo-800/30 rounded-xl px-4 py-3 flex items-start gap-2.5">
-            <FileText className="w-4 h-4 text-indigo-400 shrink-0 mt-0.5" />
-            <p className="text-xs text-slate-300 leading-relaxed">
-              <strong className="text-indigo-300">
+          <div className="bg-indigo-50 dark:bg-indigo-950/30 border border-indigo-200 dark:border-indigo-800/30 rounded-xl px-4 py-3 flex items-start gap-2.5">
+            <FileText className="w-4 h-4 text-indigo-500 dark:text-indigo-400 shrink-0 mt-0.5" />
+            <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+              <strong className="text-indigo-700 dark:text-indigo-300">
                 This analysis provides historical evidence and simulated stakeholder impacts to support officer decision-making.
               </strong>{' '}
               It does not recommend a specific course of action. The reviewing officer must make the final decision based on their

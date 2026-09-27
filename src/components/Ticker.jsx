@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const TICKER_MESSAGES = [
-  "🏆 Team TerraNex — Smart India Hackathon 2026 — PS 26017",
+  "🏆 Team CodeVeil — Project TerraNex",
   "🚧 TerraNex AI — Predictive Analytics for Land Acquisition Delay Detection",
   "📌 Synthetic demonstration dataset — shaped around real government data patterns",
 ];

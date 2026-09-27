@@ -31,7 +31,7 @@ import { useRole } from '../context/RoleContext';
 
 export default function Dashboard() {
   const navigate = useNavigate();
-  const { filterByRole, role } = useRole();
+  const { filterByRole, role, scopedDistrict } = useRole();
   const allProjects = getAllProjects();
   const scopedProjects = filterByRole(allProjects);
 
@@ -46,14 +46,17 @@ export default function Dashboard() {
   const totalConfidence = scopedProjects.reduce((acc, p) => acc + (p.data_confidence_pct || 0), 0);
   const avgConfidence = total > 0 ? (totalConfidence / total).toFixed(1) : '0.0';
 
-  // Group projects by state for bar chart
-  const stateCounts = {};
+  // Group projects by district (District Officer) or state (State / Central)
+  const isDistrictRole = role === 'District Officer';
+  const chartGroupKey = isDistrictRole ? 'district' : 'state';
+  const chartCounts = {};
   scopedProjects.forEach(p => {
-    stateCounts[p.state] = (stateCounts[p.state] || 0) + 1;
+    const key = p[chartGroupKey];
+    chartCounts[key] = (chartCounts[key] || 0) + 1;
   });
-  const stateData = Object.keys(stateCounts).map(st => ({
-    state: st,
-    count: stateCounts[st]
+  const stateData = Object.keys(chartCounts).map(label => ({
+    state: label,
+    count: chartCounts[label]
   }));
 
   const riskDistribution = [
@@ -154,9 +157,13 @@ export default function Dashboard() {
           <div>
             <h3 className="text-base font-bold text-slate-200 mb-1 flex items-center space-x-2">
               <MapPin className="w-5 h-5 text-indigo-400" />
-              <span>Project Count by State</span>
+              <span>{isDistrictRole ? 'Project Count by District' : 'Project Count by State'}</span>
             </h3>
-            <p className="text-xs text-slate-400 mb-6">Distribution across active state scope</p>
+            <p className="text-xs text-slate-400 mb-6">
+              {isDistrictRole
+                ? `Projects in ${scopedDistrict} district`
+                : 'Distribution across active state scope'}
+            </p>
 
             <div className="h-72 w-full">
               <ResponsiveContainer width="100%" height="100%">
