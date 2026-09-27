@@ -1,0 +1,152 @@
+{
+  "PRJ-001": {
+    "model_type": "GradientBoosting + Permutation Attribution",
+    "top_drivers": [
+      {
+        "factor": "R&R progress lagging",
+        "impact_pct": 13.5
+      }
+    ]
+  },
+  "PRJ-003": {
+    "model_type": "GradientBoosting + Permutation Attribution",
+    "top_drivers": [
+      {
+        "factor": "Active/unresolved legal disputes",
+        "impact_pct": 22.7
+      },
+      {
+        "factor": "Approval/notification backlog",
+        "impact_pct": 17.5
+      },
+      {
+        "factor": "Pending compensation disbursement",
+        "impact_pct": 10.1
+      },
+      {
+        "factor": "R&R progress lagging",
+        "impact_pct": 8.6
+      }
+    ]
+  },
+  "PRJ-007": {
+    "model_type": "GradientBoosting + Permutation Attribution",
+    "top_drivers": [
+      {
+        "factor": "Active/unresolved legal disputes",
+        "impact_pct": 25.2
+      },
+      {
+        "factor": "Approval/notification backlog",
+        "impact_pct": 21.0
+      },
+      {
+        "factor": "R&R progress lagging",
+        "impact_pct": 14.2
+      }
+    ]
+  },
+  "PRJ-011": {
+    "model_type": "GradientBoosting + Permutation Attribution",
+    "top_drivers": [
+      {
+        "factor": "Active/unresolved legal disputes",
+        "impact_pct": 25.2
+      },
+      {
+        "factor": "Approval/notification backlog",
+        "impact_pct": 21.0
+      },
+      {
+        "factor": "Pending compensation disbursement",
+        "impact_pct": 11.9
+      }
+    ]
+  },
+  "PRJ-019": {
+    "model_type": "GradientBoosting + Permutation Attribution",
+    "top_drivers": [
+      {
+        "factor": "Approval/notification backlog",
+        "impact_pct": 21.0
+      },
+      {
+        "factor": "Active/unresolved legal disputes",
+        "impact_pct": 12.6
+      },
+      {
+        "factor": "Pending compensation disbursement",
+        "impact_pct": 12.4
+      }
+    ]
+  },
+  "PRJ-021": {
+    "model_type": "GradientBoosting + Permutation Attribution",
+    "top_drivers": [
+      {
+        "factor": "Approval/notification backlog",
+        "impact_pct": 21.0
+      },
+      {
+        "factor": "Pending compensation disbursement",
+        "impact_pct": 11.0
+      },
+      {
+        "factor": "R&R progress lagging",
+        "impact_pct": 9.9
+      }
+    ]
+  },
+  "PRJ-030": {
+    "model_type": "GradientBoosting + Permutation Attribution",
+    "top_drivers": [
+      {
+        "factor": "Approval/notification backlog",
+        "impact_pct": 20.3
+      },
+      {
+        "factor": "Active/unresolved legal disputes",
+        "impact_pct": 12.6
+      }
+    ]
+  },
+  "PRJ-039": {
+    "model_type": "GradientBoosting + Permutation Attribution",
+    "top_drivers": [
+      {
+        "factor": "Approval/notification backlog",
+        "impact_pct": 21.0
+      },
+      {
+        "factor": "Active/unresolved legal disputes",
+        "impact_pct": 15.1
+      }
+    ]
+  },
+  "PRJ-041": {
+    "model_type": "GradientBoosting + Permutation Attribution",
+    "top_drivers": [
+      {
+        "factor": "Active/unresolved legal disputes",
+        "impact_pct": 25.2
+      },
+      {
+        "factor": "Approval/notification backlog",
+        "impact_pct": 21.0
+      }
+    ]
+  },
+  "PRJ-044": {
+    "model_type": "GradientBoosting + Permutation Attribution",
+    "top_drivers": [
+      {
+        "factor": "Active/unresolved legal disputes",
+        "impact_pct": 22.7
+      },
+      {
+        "factor": "Approval/notification backlog",
+        "impact_pct": 21.0
+      }
+    ]
+  }
+}

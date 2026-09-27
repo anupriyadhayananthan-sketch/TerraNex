@@ -1,0 +1,632 @@
+{
+  "_meta": {
+    "label": "Synthetic 6-month risk trend history per project, for sparkline visualization",
+    "note": "Final point in each project's series always equals that project's current overall_risk_score from seed_projects_dataset.json, so the sparkline and the main risk display never contradict each other."
+  },
+  "history": {
+    "PRJ-001": {
+      "points": [
+        { "months_ago": 5, "risk_score": 5.8 },
+        { "months_ago": 4, "risk_score": 8.4 },
+        { "months_ago": 3, "risk_score": 10.4 },
+        { "months_ago": 2, "risk_score": 17.4 },
+        { "months_ago": 1, "risk_score": 21.0 },
+        { "months_ago": 0, "risk_score": 22.7 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 16.9
+    },
+    "PRJ-002": {
+      "points": [
+        { "months_ago": 5, "risk_score": 69.4 },
+        { "months_ago": 4, "risk_score": 63.0 },
+        { "months_ago": 3, "risk_score": 60.2 },
+        { "months_ago": 2, "risk_score": 56.5 },
+        { "months_ago": 1, "risk_score": 48.3 },
+        { "months_ago": 0, "risk_score": 45.9 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -23.5
+    },
+    "PRJ-003": {
+      "points": [
+        { "months_ago": 5, "risk_score": 89.9 },
+        { "months_ago": 4, "risk_score": 84.9 },
+        { "months_ago": 3, "risk_score": 86.7 },
+        { "months_ago": 2, "risk_score": 81.2 },
+        { "months_ago": 1, "risk_score": 78.1 },
+        { "months_ago": 0, "risk_score": 71.9 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -18.0
+    },
+    "PRJ-004": {
+      "points": [
+        { "months_ago": 5, "risk_score": 79.2 },
+        { "months_ago": 4, "risk_score": 77.0 },
+        { "months_ago": 3, "risk_score": 71.6 },
+        { "months_ago": 2, "risk_score": 73.5 },
+        { "months_ago": 1, "risk_score": 66.8 },
+        { "months_ago": 0, "risk_score": 64.5 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -14.7
+    },
+    "PRJ-005": {
+      "points": [
+        { "months_ago": 5, "risk_score": 3.0 },
+        { "months_ago": 4, "risk_score": 13.4 },
+        { "months_ago": 3, "risk_score": 16.4 },
+        { "months_ago": 2, "risk_score": 22.8 },
+        { "months_ago": 1, "risk_score": 27.3 },
+        { "months_ago": 0, "risk_score": 34.1 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 31.1
+    },
+    "PRJ-006": {
+      "points": [
+        { "months_ago": 5, "risk_score": 56.9 },
+        { "months_ago": 4, "risk_score": 58.1 },
+        { "months_ago": 3, "risk_score": 50.6 },
+        { "months_ago": 2, "risk_score": 50.1 },
+        { "months_ago": 1, "risk_score": 42.9 },
+        { "months_ago": 0, "risk_score": 40.9 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -16.0
+    },
+    "PRJ-007": {
+      "points": [
+        { "months_ago": 5, "risk_score": 65.0 },
+        { "months_ago": 4, "risk_score": 64.1 },
+        { "months_ago": 3, "risk_score": 62.0 },
+        { "months_ago": 2, "risk_score": 62.0 },
+        { "months_ago": 1, "risk_score": 57.4 },
+        { "months_ago": 0, "risk_score": 58.7 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -6.3
+    },
+    "PRJ-008": {
+      "points": [
+        { "months_ago": 5, "risk_score": 86.0 },
+        { "months_ago": 4, "risk_score": 84.1 },
+        { "months_ago": 3, "risk_score": 77.5 },
+        { "months_ago": 2, "risk_score": 68.4 },
+        { "months_ago": 1, "risk_score": 61.8 },
+        { "months_ago": 0, "risk_score": 56.3 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -29.7
+    },
+    "PRJ-009": {
+      "points": [
+        { "months_ago": 5, "risk_score": 70.9 },
+        { "months_ago": 4, "risk_score": 62.7 },
+        { "months_ago": 3, "risk_score": 56.0 },
+        { "months_ago": 2, "risk_score": 51.8 },
+        { "months_ago": 1, "risk_score": 51.1 },
+        { "months_ago": 0, "risk_score": 45.2 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -25.7
+    },
+    "PRJ-010": {
+      "points": [
+        { "months_ago": 5, "risk_score": 53.2 },
+        { "months_ago": 4, "risk_score": 53.6 },
+        { "months_ago": 3, "risk_score": 54.8 },
+        { "months_ago": 2, "risk_score": 51.6 },
+        { "months_ago": 1, "risk_score": 53.9 },
+        { "months_ago": 0, "risk_score": 53.3 }
+      ],
+      "trend_direction": "stable",
+      "trend_delta": 0.1
+    },
+    "PRJ-011": {
+      "points": [
+        { "months_ago": 5, "risk_score": 93.1 },
+        { "months_ago": 4, "risk_score": 90.2 },
+        { "months_ago": 3, "risk_score": 88.4 },
+        { "months_ago": 2, "risk_score": 89.0 },
+        { "months_ago": 1, "risk_score": 82.7 },
+        { "months_ago": 0, "risk_score": 80.8 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -12.3
+    },
+    "PRJ-012": {
+      "points": [
+        { "months_ago": 5, "risk_score": 66.3 },
+        { "months_ago": 4, "risk_score": 61.8 },
+        { "months_ago": 3, "risk_score": 62.1 },
+        { "months_ago": 2, "risk_score": 57.6 },
+        { "months_ago": 1, "risk_score": 51.0 },
+        { "months_ago": 0, "risk_score": 47.5 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -18.8
+    },
+    "PRJ-013": {
+      "points": [
+        { "months_ago": 5, "risk_score": 83.7 },
+        { "months_ago": 4, "risk_score": 78.4 },
+        { "months_ago": 3, "risk_score": 69.4 },
+        { "months_ago": 2, "risk_score": 67.1 },
+        { "months_ago": 1, "risk_score": 61.3 },
+        { "months_ago": 0, "risk_score": 52.8 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -30.9
+    },
+    "PRJ-014": {
+      "points": [
+        { "months_ago": 5, "risk_score": 88.2 },
+        { "months_ago": 4, "risk_score": 81.0 },
+        { "months_ago": 3, "risk_score": 73.7 },
+        { "months_ago": 2, "risk_score": 70.9 },
+        { "months_ago": 1, "risk_score": 60.1 },
+        { "months_ago": 0, "risk_score": 55.6 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -32.6
+    },
+    "PRJ-015": {
+      "points": [
+        { "months_ago": 5, "risk_score": 8.1 },
+        { "months_ago": 4, "risk_score": 12.6 },
+        { "months_ago": 3, "risk_score": 21.0 },
+        { "months_ago": 2, "risk_score": 22.5 },
+        { "months_ago": 1, "risk_score": 29.9 },
+        { "months_ago": 0, "risk_score": 37.6 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 29.5
+    },
+    "PRJ-016": {
+      "points": [
+        { "months_ago": 5, "risk_score": 16.4 },
+        { "months_ago": 4, "risk_score": 20.5 },
+        { "months_ago": 3, "risk_score": 26.8 },
+        { "months_ago": 2, "risk_score": 34.8 },
+        { "months_ago": 1, "risk_score": 40.0 },
+        { "months_ago": 0, "risk_score": 41.8 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 25.4
+    },
+    "PRJ-017": {
+      "points": [
+        { "months_ago": 5, "risk_score": 79.8 },
+        { "months_ago": 4, "risk_score": 79.1 },
+        { "months_ago": 3, "risk_score": 71.6 },
+        { "months_ago": 2, "risk_score": 67.9 },
+        { "months_ago": 1, "risk_score": 58.8 },
+        { "months_ago": 0, "risk_score": 56.7 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -23.1
+    },
+    "PRJ-018": {
+      "points": [
+        { "months_ago": 5, "risk_score": 15.6 },
+        { "months_ago": 4, "risk_score": 22.5 },
+        { "months_ago": 3, "risk_score": 27.1 },
+        { "months_ago": 2, "risk_score": 32.5 },
+        { "months_ago": 1, "risk_score": 39.7 },
+        { "months_ago": 0, "risk_score": 45.6 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 30.0
+    },
+    "PRJ-019": {
+      "points": [
+        { "months_ago": 5, "risk_score": 70.9 },
+        { "months_ago": 4, "risk_score": 69.8 },
+        { "months_ago": 3, "risk_score": 73.2 },
+        { "months_ago": 2, "risk_score": 69.1 },
+        { "months_ago": 1, "risk_score": 73.7 },
+        { "months_ago": 0, "risk_score": 73.0 }
+      ],
+      "trend_direction": "stable",
+      "trend_delta": 2.1
+    },
+    "PRJ-020": {
+      "points": [
+        { "months_ago": 5, "risk_score": 53.6 },
+        { "months_ago": 4, "risk_score": 55.1 },
+        { "months_ago": 3, "risk_score": 57.5 },
+        { "months_ago": 2, "risk_score": 57.0 },
+        { "months_ago": 1, "risk_score": 56.2 },
+        { "months_ago": 0, "risk_score": 58.8 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 5.2
+    },
+    "PRJ-021": {
+      "points": [
+        { "months_ago": 5, "risk_score": 42.3 },
+        { "months_ago": 4, "risk_score": 44.5 },
+        { "months_ago": 3, "risk_score": 51.1 },
+        { "months_ago": 2, "risk_score": 57.9 },
+        { "months_ago": 1, "risk_score": 64.3 },
+        { "months_ago": 0, "risk_score": 74.0 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 31.7
+    },
+    "PRJ-022": {
+      "points": [
+        { "months_ago": 5, "risk_score": 29.8 },
+        { "months_ago": 4, "risk_score": 32.1 },
+        { "months_ago": 3, "risk_score": 32.5 },
+        { "months_ago": 2, "risk_score": 38.5 },
+        { "months_ago": 1, "risk_score": 40.8 },
+        { "months_ago": 0, "risk_score": 45.4 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 15.6
+    },
+    "PRJ-023": {
+      "points": [
+        { "months_ago": 5, "risk_score": 85.6 },
+        { "months_ago": 4, "risk_score": 81.8 },
+        { "months_ago": 3, "risk_score": 79.1 },
+        { "months_ago": 2, "risk_score": 77.2 },
+        { "months_ago": 1, "risk_score": 72.4 },
+        { "months_ago": 0, "risk_score": 68.2 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -17.4
+    },
+    "PRJ-024": {
+      "points": [
+        { "months_ago": 5, "risk_score": 21.1 },
+        { "months_ago": 4, "risk_score": 26.4 },
+        { "months_ago": 3, "risk_score": 32.3 },
+        { "months_ago": 2, "risk_score": 33.5 },
+        { "months_ago": 1, "risk_score": 42.0 },
+        { "months_ago": 0, "risk_score": 48.1 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 27.0
+    },
+    "PRJ-025": {
+      "points": [
+        { "months_ago": 5, "risk_score": 14.0 },
+        { "months_ago": 4, "risk_score": 23.2 },
+        { "months_ago": 3, "risk_score": 26.6 },
+        { "months_ago": 2, "risk_score": 35.3 },
+        { "months_ago": 1, "risk_score": 39.0 },
+        { "months_ago": 0, "risk_score": 46.2 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 32.2
+    },
+    "PRJ-026": {
+      "points": [
+        { "months_ago": 5, "risk_score": 5.8 },
+        { "months_ago": 4, "risk_score": 13.9 },
+        { "months_ago": 3, "risk_score": 14.8 },
+        { "months_ago": 2, "risk_score": 20.6 },
+        { "months_ago": 1, "risk_score": 25.4 },
+        { "months_ago": 0, "risk_score": 29.7 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 23.9
+    },
+    "PRJ-027": {
+      "points": [
+        { "months_ago": 5, "risk_score": 42.0 },
+        { "months_ago": 4, "risk_score": 42.4 },
+        { "months_ago": 3, "risk_score": 44.7 },
+        { "months_ago": 2, "risk_score": 47.1 },
+        { "months_ago": 1, "risk_score": 44.1 },
+        { "months_ago": 0, "risk_score": 46.2 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 4.2
+    },
+    "PRJ-028": {
+      "points": [
+        { "months_ago": 5, "risk_score": 75.9 },
+        { "months_ago": 4, "risk_score": 67.8 },
+        { "months_ago": 3, "risk_score": 67.2 },
+        { "months_ago": 2, "risk_score": 63.1 },
+        { "months_ago": 1, "risk_score": 54.2 },
+        { "months_ago": 0, "risk_score": 50.0 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -25.9
+    },
+    "PRJ-029": {
+      "points": [
+        { "months_ago": 5, "risk_score": 3.0 },
+        { "months_ago": 4, "risk_score": 9.3 },
+        { "months_ago": 3, "risk_score": 16.0 },
+        { "months_ago": 2, "risk_score": 27.3 },
+        { "months_ago": 1, "risk_score": 33.8 },
+        { "months_ago": 0, "risk_score": 39.0 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 36.0
+    },
+    "PRJ-030": {
+      "points": [
+        { "months_ago": 5, "risk_score": 45.3 },
+        { "months_ago": 4, "risk_score": 54.5 },
+        { "months_ago": 3, "risk_score": 58.8 },
+        { "months_ago": 2, "risk_score": 64.7 },
+        { "months_ago": 1, "risk_score": 69.5 },
+        { "months_ago": 0, "risk_score": 75.6 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 30.3
+    },
+    "PRJ-031": {
+      "points": [
+        { "months_ago": 5, "risk_score": 42.6 },
+        { "months_ago": 4, "risk_score": 48.8 },
+        { "months_ago": 3, "risk_score": 51.6 },
+        { "months_ago": 2, "risk_score": 58.2 },
+        { "months_ago": 1, "risk_score": 62.8 },
+        { "months_ago": 0, "risk_score": 64.8 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 22.2
+    },
+    "PRJ-032": {
+      "points": [
+        { "months_ago": 5, "risk_score": 64.9 },
+        { "months_ago": 4, "risk_score": 61.0 },
+        { "months_ago": 3, "risk_score": 56.8 },
+        { "months_ago": 2, "risk_score": 52.8 },
+        { "months_ago": 1, "risk_score": 50.0 },
+        { "months_ago": 0, "risk_score": 42.4 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -22.5
+    },
+    "PRJ-033": {
+      "points": [
+        { "months_ago": 5, "risk_score": 14.0 },
+        { "months_ago": 4, "risk_score": 20.2 },
+        { "months_ago": 3, "risk_score": 26.2 },
+        { "months_ago": 2, "risk_score": 30.4 },
+        { "months_ago": 1, "risk_score": 34.4 },
+        { "months_ago": 0, "risk_score": 38.6 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 24.6
+    },
+    "PRJ-034": {
+      "points": [
+        { "months_ago": 5, "risk_score": 69.1 },
+        { "months_ago": 4, "risk_score": 62.5 },
+        { "months_ago": 3, "risk_score": 56.7 },
+        { "months_ago": 2, "risk_score": 48.4 },
+        { "months_ago": 1, "risk_score": 46.8 },
+        { "months_ago": 0, "risk_score": 38.6 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -30.5
+    },
+    "PRJ-035": {
+      "points": [
+        { "months_ago": 5, "risk_score": 34.1 },
+        { "months_ago": 4, "risk_score": 40.3 },
+        { "months_ago": 3, "risk_score": 46.0 },
+        { "months_ago": 2, "risk_score": 45.5 },
+        { "months_ago": 1, "risk_score": 52.8 },
+        { "months_ago": 0, "risk_score": 59.4 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 25.3
+    },
+    "PRJ-036": {
+      "points": [
+        { "months_ago": 5, "risk_score": 13.5 },
+        { "months_ago": 4, "risk_score": 20.6 },
+        { "months_ago": 3, "risk_score": 22.3 },
+        { "months_ago": 2, "risk_score": 28.2 },
+        { "months_ago": 1, "risk_score": 36.6 },
+        { "months_ago": 0, "risk_score": 38.5 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 25.0
+    },
+    "PRJ-037": {
+      "points": [
+        { "months_ago": 5, "risk_score": 73.4 },
+        { "months_ago": 4, "risk_score": 73.6 },
+        { "months_ago": 3, "risk_score": 67.3 },
+        { "months_ago": 2, "risk_score": 59.4 },
+        { "months_ago": 1, "risk_score": 55.4 },
+        { "months_ago": 0, "risk_score": 51.5 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -21.9
+    },
+    "PRJ-038": {
+      "points": [
+        { "months_ago": 5, "risk_score": 77.8 },
+        { "months_ago": 4, "risk_score": 76.2 },
+        { "months_ago": 3, "risk_score": 66.7 },
+        { "months_ago": 2, "risk_score": 60.6 },
+        { "months_ago": 1, "risk_score": 58.4 },
+        { "months_ago": 0, "risk_score": 50.6 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -27.2
+    },
+    "PRJ-039": {
+      "points": [
+        { "months_ago": 5, "risk_score": 35.2 },
+        { "months_ago": 4, "risk_score": 43.3 },
+        { "months_ago": 3, "risk_score": 47.1 },
+        { "months_ago": 2, "risk_score": 53.4 },
+        { "months_ago": 1, "risk_score": 62.5 },
+        { "months_ago": 0, "risk_score": 65.6 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 30.4
+    },
+    "PRJ-040": {
+      "points": [
+        { "months_ago": 5, "risk_score": 87.4 },
+        { "months_ago": 4, "risk_score": 80.7 },
+        { "months_ago": 3, "risk_score": 75.3 },
+        { "months_ago": 2, "risk_score": 71.8 },
+        { "months_ago": 1, "risk_score": 66.4 },
+        { "months_ago": 0, "risk_score": 63.0 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -24.4
+    },
+    "PRJ-041": {
+      "points": [
+        { "months_ago": 5, "risk_score": 29.5 },
+        { "months_ago": 4, "risk_score": 41.0 },
+        { "months_ago": 3, "risk_score": 48.6 },
+        { "months_ago": 2, "risk_score": 54.0 },
+        { "months_ago": 1, "risk_score": 56.8 },
+        { "months_ago": 0, "risk_score": 66.5 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 37.0
+    },
+    "PRJ-042": {
+      "points": [
+        { "months_ago": 5, "risk_score": 65.0 },
+        { "months_ago": 4, "risk_score": 62.4 },
+        { "months_ago": 3, "risk_score": 56.5 },
+        { "months_ago": 2, "risk_score": 52.0 },
+        { "months_ago": 1, "risk_score": 52.0 },
+        { "months_ago": 0, "risk_score": 48.6 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -16.4
+    },
+    "PRJ-043": {
+      "points": [
+        { "months_ago": 5, "risk_score": 9.1 },
+        { "months_ago": 4, "risk_score": 16.0 },
+        { "months_ago": 3, "risk_score": 17.1 },
+        { "months_ago": 2, "risk_score": 19.9 },
+        { "months_ago": 1, "risk_score": 28.1 },
+        { "months_ago": 0, "risk_score": 30.6 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 21.5
+    },
+    "PRJ-044": {
+      "points": [
+        { "months_ago": 5, "risk_score": 74.2 },
+        { "months_ago": 4, "risk_score": 75.0 },
+        { "months_ago": 3, "risk_score": 76.2 },
+        { "months_ago": 2, "risk_score": 77.1 },
+        { "months_ago": 1, "risk_score": 75.0 },
+        { "months_ago": 0, "risk_score": 76.6 }
+      ],
+      "trend_direction": "stable",
+      "trend_delta": 2.4
+    },
+    "PRJ-045": {
+      "points": [
+        { "months_ago": 5, "risk_score": 59.0 },
+        { "months_ago": 4, "risk_score": 57.9 },
+        { "months_ago": 3, "risk_score": 51.9 },
+        { "months_ago": 2, "risk_score": 54.4 },
+        { "months_ago": 1, "risk_score": 50.6 },
+        { "months_ago": 0, "risk_score": 52.3 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -6.7
+    },
+    "PRJ-046": {
+      "points": [
+        { "months_ago": 5, "risk_score": 79.3 },
+        { "months_ago": 4, "risk_score": 75.3 },
+        { "months_ago": 3, "risk_score": 73.9 },
+        { "months_ago": 2, "risk_score": 77.9 },
+        { "months_ago": 1, "risk_score": 76.0 },
+        { "months_ago": 0, "risk_score": 74.8 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -4.5
+    },
+    "PRJ-047": {
+      "points": [
+        { "months_ago": 5, "risk_score": 81.1 },
+        { "months_ago": 4, "risk_score": 73.5 },
+        { "months_ago": 3, "risk_score": 68.2 },
+        { "months_ago": 2, "risk_score": 63.8 },
+        { "months_ago": 1, "risk_score": 58.6 },
+        { "months_ago": 0, "risk_score": 54.9 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -26.2
+    },
+    "PRJ-048": {
+      "points": [
+        { "months_ago": 5, "risk_score": 84.3 },
+        { "months_ago": 4, "risk_score": 77.7 },
+        { "months_ago": 3, "risk_score": 73.9 },
+        { "months_ago": 2, "risk_score": 68.3 },
+        { "months_ago": 1, "risk_score": 58.8 },
+        { "months_ago": 0, "risk_score": 54.1 }
+      ],
+      "trend_direction": "improving",
+      "trend_delta": -30.2
+    },
+    "PRJ-049": {
+      "points": [
+        { "months_ago": 5, "risk_score": 25.6 },
+        { "months_ago": 4, "risk_score": 31.6 },
+        { "months_ago": 3, "risk_score": 36.0 },
+        { "months_ago": 2, "risk_score": 39.0 },
+        { "months_ago": 1, "risk_score": 39.3 },
+        { "months_ago": 0, "risk_score": 44.6 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 19.0
+    },
+    "PRJ-050": {
+      "points": [
+        { "months_ago": 5, "risk_score": 27.7 },
+        { "months_ago": 4, "risk_score": 33.7 },
+        { "months_ago": 3, "risk_score": 42.1 },
+        { "months_ago": 2, "risk_score": 49.0 },
+        { "months_ago": 1, "risk_score": 54.5 },
+        { "months_ago": 0, "risk_score": 61.1 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 33.4
+    },
+    "PRJ-051": {
+      "points": [
+        { "months_ago": 5, "risk_score": 39.1 },
+        { "months_ago": 4, "risk_score": 44.4 },
+        { "months_ago": 3, "risk_score": 52.6 },
+        { "months_ago": 2, "risk_score": 60.0 },
+        { "months_ago": 1, "risk_score": 66.9 },
+        { "months_ago": 0, "risk_score": 72.4 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 33.3
+    },
+    "PRJ-052": {
+      "points": [
+        { "months_ago": 5, "risk_score": 5.0 },
+        { "months_ago": 4, "risk_score": 5.6 },
+        { "months_ago": 3, "risk_score": 12.4 },
+        { "months_ago": 2, "risk_score": 14.8 },
+        { "months_ago": 1, "risk_score": 18.1 },
+        { "months_ago": 0, "risk_score": 18.3 }
+      ],
+      "trend_direction": "worsening",
+      "trend_delta": 13.3
+    }
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "_meta": {
+    "label": "Simulated data-ingestion feed for demo purposes (v2 — now with dispute_related tagging)",
+    "grounding_note": "Headlines are synthetic, shaped in the style of real Parliament replies/data.gov.in updates/PIB releases/eParlib records. No specific real project's figures are represented.",
+    "count": 22,
+    "dispute_prone_project_ids": [
+      "PRJ-044",
+      "PRJ-004",
+      "PRJ-014",
+      "PRJ-052",
+      "PRJ-042",
+      "PRJ-040"
+    ]
+  },
+  "feed": [
+    {
+      "id": "FEED-002",
+      "date": "2026-09-26",
+      "days_ago": 0,
+      "source": "Rajya Sabha Unstarred Question Reply",
+      "headline": "Archive record notes ongoing litigation over compensation for a power transmission project in Odisha",
+      "linked_project_id": "PRJ-044",
+      "dispute_related": true
+    },
+    {
+      "id": "FEED-011",
+      "date": "2026-09-26",
+      "days_ago": 0,
+      "source": "eParlib Archive Record",
+      "headline": "Archive record notes ongoing litigation over compensation for a national highway project in Karnataka",
+      "linked_project_id": "PRJ-042",
+      "dispute_related": true
+    },
+    {
+      "id": "FEED-020",
+      "date": "2026-09-25",
+      "days_ago": 1,
+      "source": "Rajya Sabha Unstarred Question Reply",
+      "headline": "Reply lists possession handover delay for a national highway project in West Bengal",
+      "linked_project_id": "PRJ-016",
+      "dispute_related": false
+    },
+    {
+      "id": "FEED-021",
+      "date": "2026-09-25",
+      "days_ago": 1,
+      "source": "data.gov.in Dataset Update",
+      "headline": "Reply lists possession handover delay for a power transmission project in Karnataka",
+      "linked_project_id": null,
+      "dispute_related": false
+    },
+    {
+      "id": "FEED-015",
+      "date": "2026-09-23",
+      "days_ago": 3,
+      "source": "PIB Press Release",
+      "headline": "Dataset update lists 142 families awaiting R&R clearance under a irrigation canal corridor in Telangana",
+      "linked_project_id": "PRJ-037",
+      "dispute_related": false
+    },
+    {
+      "id": "FEED-005",
+      "date": "2026-09-21",
+      "days_ago": 5,
+      "source": "eParlib Archive Record",
+      "headline": "Reply confirms unresolved ownership dispute delaying a power transmission project in Telangana",
+      "linked_project_id": "PRJ-004",
+      "dispute_related": true
+    },
+    {
+      "id": "FEED-006",
+      "date": "2026-09-20",
+      "days_ago": 6,
+      "source": "eParlib Archive Record",
+      "headline": "Parliament reply flags legal dispute pending resolution for a power transmission project in Bihar",
+      "linked_project_id": "PRJ-014",
+      "dispute_related": true
+    },
+    {
+      "id": "FEED-013",
+      "date": "2026-09-20",
+      "days_ago": 6,
+      "source": "eParlib Archive Record",
+      "headline": "Reply confirms unresolved ownership dispute delaying a power transmission project in Karnataka",
+      "linked_project_id": "PRJ-040",
+      "dispute_related": true
+    },
+    {
+      "id": "FEED-019",
+      "date": "2026-09-19",
+      "days_ago": 7,
+      "source": "data.gov.in Dataset Update",
+      "headline": "Archive record shows documentation verification completed for a railway line project in West Bengal",
+      "linked_project_id": "PRJ-027",
+      "dispute_related": false
+    },
+    {
+      "id": "FEED-018",
+      "date": "2026-09-18",
+      "days_ago": 8,
+      "source": "PIB Press Release",
+      "headline": "Dataset update lists 240 families awaiting R&R clearance under a railway line corridor in Telangana",
+      "linked_project_id": "PRJ-022",
+      "dispute_related": false
+    },
+    {
+      "id": "FEED-010",
+      "date": "2026-09-15",
+      "days_ago": 11,
+      "source": "data.gov.in Dataset Update",
+      "headline": "Reply confirms unresolved ownership dispute delaying a national highway project in Punjab",
+      "linked_project_id": "PRJ-052",
+      "dispute_related": true
+    },
+    {
+      "id": "FEED-014",
+      "date": "2026-09-15",
+      "days_ago": 11,
+      "source": "data.gov.in Dataset Update",
+      "headline": "Reply confirms unresolved ownership dispute delaying a power transmission project in Karnataka",
+      "linked_project_id": "PRJ-040",
+      "dispute_related": true
+    },
+    {
+      "id": "FEED-009",
+      "date": "2026-09-14",
+      "days_ago": 12,
+      "source": "Rajya Sabha Unstarred Question Reply",
+      "headline": "Reply confirms unresolved ownership dispute delaying a national highway project in Punjab",
+      "linked_project_id": "PRJ-052",
+      "dispute_related": true
+    },
+    {
+      "id": "FEED-007",
+      "date": "2026-09-09",
+      "days_ago": 17,
+      "source": "PIB Press Release",
+      "headline": "Archive record notes ongoing litigation over compensation for a power transmission project in Bihar",
+      "linked_project_id": "PRJ-014",
+      "dispute_related": true
+    },
+    {
+      "id": "FEED-003",
+      "date": "2026-09-07",
+      "days_ago": 19,
+      "source": "eParlib Archive Record",
+      "headline": "Archive record notes ongoing litigation over compensation for a power transmission project in Odisha",
+      "linked_project_id": "PRJ-044",
+      "dispute_related": true
+    },
+    {
+      "id": "FEED-016",
+      "date": "2026-09-07",
+      "days_ago": 19,
+      "source": "PIB Press Release",
+      "headline": "Dataset update reports revised land area figures for a railway line project in Telangana",
+      "linked_project_id": "PRJ-043",
+      "dispute_related": false
+    },
+    {
+      "id": "FEED-008",
+      "date": "2026-09-03",
+      "days_ago": 23,
+      "source": "Lok Sabha Unstarred Question Reply",
+      "headline": "Archive record notes ongoing litigation over compensation for a power transmission project in Bihar",
+      "linked_project_id": "PRJ-014",
+      "dispute_related": true
+    },
+    {
+      "id": "FEED-022",
+      "date": "2026-09-03",
+      "days_ago": 23,
+      "source": "Rajya Sabha Unstarred Question Reply",
+      "headline": "Dataset update lists 212 families awaiting R&R clearance under a industrial corridor corridor in Uttar Pradesh",
+      "linked_project_id": null,
+      "dispute_related": false
+    },
+    {
+      "id": "FEED-004",
+      "date": "2026-09-02",
+      "days_ago": 24,
+      "source": "Rajya Sabha Unstarred Question Reply",
+      "headline": "Archive record notes ongoing litigation over compensation for a power transmission project in Telangana",
+      "linked_project_id": "PRJ-004",
+      "dispute_related": true
+    },
+    {
+      "id": "FEED-012",
+      "date": "2026-09-02",
+      "days_ago": 24,
+      "source": "Rajya Sabha Unstarred Question Reply",
+      "headline": "Parliament reply flags legal dispute pending resolution for a national highway project in Karnataka",
+      "linked_project_id": "PRJ-042",
+      "dispute_related": true
+    },
+    {
+      "id": "FEED-017",
+      "date": "2026-09-02",
+      "days_ago": 24,
+      "source": "Rajya Sabha Unstarred Question Reply",
+      "headline": "Dataset update lists 353 families awaiting R&R clearance under a industrial corridor corridor in Uttar Pradesh",
+      "linked_project_id": "PRJ-009",
+      "dispute_related": false
+    },
+    {
+      "id": "FEED-001",
+      "date": "2026-08-28",
+      "days_ago": 29,
+      "source": "data.gov.in Dataset Update",
+      "headline": "Reply confirms unresolved ownership dispute delaying a power transmission project in Odisha",
+      "linked_project_id": "PRJ-044",
+      "dispute_related": true
+    }
+  ]
+}

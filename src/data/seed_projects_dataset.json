@@ -1,0 +1,2898 @@
+{
+  "_meta": {
+    "label": "Synthetic demonstration dataset shaped around PS 26017 variables",
+    "grounding_note": "Distributions (states, project types, dominant delay causes, RFCTLARR stages) are shaped around patterns observed in data.gov.in Parliament-reply datasets and eParlib records researched for this project. Individual project names, IDs and figures are synthetic — no real, identifiable project's data is represented.",
+    "count": 52,
+    "risk_formula": "overall_risk_score = delay_probability(40%) + overdue_severity(20%) + compensation/RR_exposure(15%) + legal_exposure(15%) + data_freshness(10%) - stakeholder_responsiveness_bonus"
+  },
+  "projects": [
+    {
+      "id": "PRJ-001",
+      "name": "Patna-West Peripheral Ring Road",
+      "project_type": "Urban Infrastructure",
+      "state": "Bihar",
+      "district": "Patna",
+      "current_stage": "SIA/Approvals",
+      "land_area_hectares": 630.0,
+      "families_affected": 1405,
+      "compensation_disbursed_pct": 74,
+      "legal_disputes_count": 0,
+      "documentation_completeness_pct": 84,
+      "rr_progress_pct": 14,
+      "stakeholder_responsiveness_score": 23,
+      "months_since_notification": 7,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 22.7,
+      "risk_category": "Low",
+      "stage_risks": {
+        "Notification": 24,
+        "SIA/Approvals": 22,
+        "Compensation": 45,
+        "R&R": 22,
+        "Possession": 55
+      },
+      "top_drivers": [
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 12.9
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Initiate R&R committee review for 1208 pending families",
+          "Release pending rehabilitation grants this quarter"
+        ],
+        "owner": "R&R Committee",
+        "priority": "Low",
+        "due_days": 30
+      },
+      "data_confidence_pct": 90.8,
+      "last_synced_days_ago": 3,
+      "coordinates": {
+        "lat": 25.7799,
+        "lng": 85.5539
+      }
+    },
+    {
+      "id": "PRJ-002",
+      "name": "NH-31 Aurangabad-South Widening",
+      "project_type": "National Highway",
+      "state": "Maharashtra",
+      "district": "Aurangabad",
+      "current_stage": "SIA/Approvals",
+      "land_area_hectares": 144.8,
+      "families_affected": 1583,
+      "compensation_disbursed_pct": 48,
+      "legal_disputes_count": 0,
+      "documentation_completeness_pct": 78,
+      "rr_progress_pct": 22,
+      "stakeholder_responsiveness_score": 65,
+      "months_since_notification": 24,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 45.9,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 26,
+        "SIA/Approvals": 45,
+        "Compensation": 44,
+        "R&R": 17,
+        "Possession": 34
+      },
+      "top_drivers": [
+        {
+          "factor": "Pending compensation disbursement",
+          "impact_pct": 18.8
+        },
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 16.0
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 11.7
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Escalate 164 pending compensation disbursement cases to District Collector",
+          "Set a 15-day disbursement completion target with weekly tracking"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 76.8,
+      "last_synced_days_ago": 14,
+      "coordinates": {
+        "lat": 19.0946,
+        "lng": 75.0518
+      }
+    },
+    {
+      "id": "PRJ-003",
+      "name": "Amritsar-East Peripheral Ring Road",
+      "project_type": "Urban Infrastructure",
+      "state": "Punjab",
+      "district": "Amritsar",
+      "current_stage": "Compensation",
+      "land_area_hectares": 660.5,
+      "families_affected": 183,
+      "compensation_disbursed_pct": 34,
+      "legal_disputes_count": 9,
+      "documentation_completeness_pct": 78,
+      "rr_progress_pct": 45,
+      "stakeholder_responsiveness_score": 78,
+      "months_since_notification": 25,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 71.9,
+      "risk_category": "High",
+      "stage_risks": {
+        "Notification": 33,
+        "SIA/Approvals": 32,
+        "Compensation": 70,
+        "R&R": 54,
+        "Possession": 53
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 21.6
+        },
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 16.7
+        },
+        {
+          "factor": "Pending compensation disbursement",
+          "impact_pct": 9.6
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 8.2
+        },
+        {
+          "factor": "Strong stakeholder responsiveness",
+          "impact_pct": -4.7
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 9 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "High",
+        "due_days": 7
+      },
+      "data_confidence_pct": 90.5,
+      "last_synced_days_ago": 3,
+      "coordinates": {
+        "lat": 31.0776,
+        "lng": 75.631
+      }
+    },
+    {
+      "id": "PRJ-004",
+      "name": "Khammam-North 400kV Transmission Corridor",
+      "project_type": "Power Transmission",
+      "state": "Telangana",
+      "district": "Khammam",
+      "current_stage": "Possession",
+      "land_area_hectares": 549.4,
+      "families_affected": 1160,
+      "compensation_disbursed_pct": 33,
+      "legal_disputes_count": 6,
+      "documentation_completeness_pct": 37,
+      "rr_progress_pct": 39,
+      "stakeholder_responsiveness_score": 24,
+      "months_since_notification": 22,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 64.5,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 27,
+        "SIA/Approvals": 14,
+        "Compensation": 23,
+        "R&R": 46,
+        "Possession": 58
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 14.7
+        },
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 14.4
+        },
+        {
+          "factor": "Pending compensation disbursement",
+          "impact_pct": 12.0
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 11.3
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 90.5,
+      "last_synced_days_ago": 6,
+      "coordinates": {
+        "lat": 18.1865,
+        "lng": 79.3748
+      }
+    },
+    {
+      "id": "PRJ-005",
+      "name": "Bhopal-West Canal Modernization",
+      "project_type": "Irrigation Canal",
+      "state": "Madhya Pradesh",
+      "district": "Bhopal",
+      "current_stage": "R&R",
+      "land_area_hectares": 465.0,
+      "families_affected": 1549,
+      "compensation_disbursed_pct": 79,
+      "legal_disputes_count": 3,
+      "documentation_completeness_pct": 81,
+      "rr_progress_pct": 56,
+      "stakeholder_responsiveness_score": 48,
+      "months_since_notification": 10,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 34.1,
+      "risk_category": "Low",
+      "stage_risks": {
+        "Notification": 41,
+        "SIA/Approvals": 15,
+        "Compensation": 13,
+        "R&R": 30,
+        "Possession": 20
+      },
+      "top_drivers": [
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 6.6
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Initiate R&R committee review for 681 pending families",
+          "Release pending rehabilitation grants this quarter"
+        ],
+        "owner": "R&R Committee",
+        "priority": "Low",
+        "due_days": 30
+      },
+      "data_confidence_pct": 79.4,
+      "last_synced_days_ago": 10,
+      "coordinates": {
+        "lat": 23.6505,
+        "lng": 77.3066
+      }
+    },
+    {
+      "id": "PRJ-006",
+      "name": "Purulia-Bypass Industrial Development Corridor",
+      "project_type": "Industrial Corridor",
+      "state": "West Bengal",
+      "district": "Purulia",
+      "current_stage": "R&R",
+      "land_area_hectares": 24.6,
+      "families_affected": 1496,
+      "compensation_disbursed_pct": 19,
+      "legal_disputes_count": 6,
+      "documentation_completeness_pct": 98,
+      "rr_progress_pct": 44,
+      "stakeholder_responsiveness_score": 63,
+      "months_since_notification": 9,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 40.9,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 37,
+        "SIA/Approvals": 20,
+        "Compensation": 39,
+        "R&R": 42,
+        "Possession": 26
+      },
+      "top_drivers": [
+        {
+          "factor": "Pending compensation disbursement",
+          "impact_pct": 17.5
+        },
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 14.4
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 8.4
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Escalate 242 pending compensation disbursement cases to District Collector",
+          "Set a 15-day disbursement completion target with weekly tracking"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 91.0,
+      "last_synced_days_ago": 4,
+      "coordinates": {
+        "lat": 23.4663,
+        "lng": 87.8144
+      }
+    },
+    {
+      "id": "PRJ-007",
+      "name": "Muzaffarpur-Bypass Peripheral Ring Road",
+      "project_type": "Urban Infrastructure",
+      "state": "Bihar",
+      "district": "Muzaffarpur",
+      "current_stage": "SIA/Approvals",
+      "land_area_hectares": 327.2,
+      "families_affected": 350,
+      "compensation_disbursed_pct": 74,
+      "legal_disputes_count": 11,
+      "documentation_completeness_pct": 97,
+      "rr_progress_pct": 10,
+      "stakeholder_responsiveness_score": 61,
+      "months_since_notification": 33,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 58.7,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 17,
+        "SIA/Approvals": 60,
+        "Compensation": 29,
+        "R&R": 25,
+        "Possession": 13
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 24.0
+        },
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 20.0
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 13.5
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 11 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 93.0,
+      "last_synced_days_ago": 1,
+      "coordinates": {
+        "lat": 25.289,
+        "lng": 85.5808
+      }
+    },
+    {
+      "id": "PRJ-008",
+      "name": "Indore-West Industrial Development Corridor",
+      "project_type": "Industrial Corridor",
+      "state": "Madhya Pradesh",
+      "district": "Indore",
+      "current_stage": "Compensation",
+      "land_area_hectares": 805.6,
+      "families_affected": 358,
+      "compensation_disbursed_pct": 38,
+      "legal_disputes_count": 4,
+      "documentation_completeness_pct": 84,
+      "rr_progress_pct": 37,
+      "stakeholder_responsiveness_score": 89,
+      "months_since_notification": 14,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 56.3,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 29,
+        "SIA/Approvals": 35,
+        "Compensation": 55,
+        "R&R": 38,
+        "Possession": 43
+      },
+      "top_drivers": [
+        {
+          "factor": "Pending compensation disbursement",
+          "impact_pct": 13.2
+        },
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 9.6
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 9.4
+        },
+        {
+          "factor": "Strong stakeholder responsiveness",
+          "impact_pct": -5.3
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Escalate 44 pending compensation disbursement cases to District Collector",
+          "Set a 15-day disbursement completion target with weekly tracking"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 49.4,
+      "last_synced_days_ago": 30,
+      "coordinates": {
+        "lat": 23.2418,
+        "lng": 77.0975
+      }
+    },
+    {
+      "id": "PRJ-009",
+      "name": "Ghaziabad-East Industrial Development Corridor",
+      "project_type": "Industrial Corridor",
+      "state": "Uttar Pradesh",
+      "district": "Ghaziabad",
+      "current_stage": "Notification",
+      "land_area_hectares": 542.0,
+      "families_affected": 488,
+      "compensation_disbursed_pct": 13,
+      "legal_disputes_count": 10,
+      "documentation_completeness_pct": 72,
+      "rr_progress_pct": 19,
+      "stakeholder_responsiveness_score": 85,
+      "months_since_notification": 17,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 45.2,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 42,
+        "SIA/Approvals": 44,
+        "Compensation": 18,
+        "R&R": 46,
+        "Possession": 46
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 24.0
+        },
+        {
+          "factor": "Pending compensation disbursement",
+          "impact_pct": 20.4
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 12.2
+        },
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 11.3
+        },
+        {
+          "factor": "Strong stakeholder responsiveness",
+          "impact_pct": -5.1
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 10 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 92.8,
+      "last_synced_days_ago": 4,
+      "coordinates": {
+        "lat": 27.4672,
+        "lng": 80.8415
+      }
+    },
+    {
+      "id": "PRJ-010",
+      "name": "NH-95 Warangal-South Widening",
+      "project_type": "National Highway",
+      "state": "Telangana",
+      "district": "Warangal",
+      "current_stage": "SIA/Approvals",
+      "land_area_hectares": 358.3,
+      "families_affected": 1789,
+      "compensation_disbursed_pct": 11,
+      "legal_disputes_count": 6,
+      "documentation_completeness_pct": 42,
+      "rr_progress_pct": 17,
+      "stakeholder_responsiveness_score": 71,
+      "months_since_notification": 23,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 53.3,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 25,
+        "SIA/Approvals": 47,
+        "Compensation": 38,
+        "R&R": 18,
+        "Possession": 37
+      },
+      "top_drivers": [
+        {
+          "factor": "Pending compensation disbursement",
+          "impact_pct": 18.9
+        },
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 15.3
+        },
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 14.4
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 12.4
+        },
+        {
+          "factor": "Strong stakeholder responsiveness",
+          "impact_pct": -4.3
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Escalate 318 pending compensation disbursement cases to District Collector",
+          "Set a 15-day disbursement completion target with weekly tracking"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 96.2,
+      "last_synced_days_ago": 2,
+      "coordinates": {
+        "lat": 17.6202,
+        "lng": 79.4552
+      }
+    },
+    {
+      "id": "PRJ-011",
+      "name": "Bhagalpur-East Industrial Development Corridor",
+      "project_type": "Industrial Corridor",
+      "state": "Bihar",
+      "district": "Bhagalpur",
+      "current_stage": "Compensation",
+      "land_area_hectares": 466.4,
+      "families_affected": 50,
+      "compensation_disbursed_pct": 16,
+      "legal_disputes_count": 11,
+      "documentation_completeness_pct": 60,
+      "rr_progress_pct": 31,
+      "stakeholder_responsiveness_score": 72,
+      "months_since_notification": 33,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 80.8,
+      "risk_category": "High",
+      "stage_risks": {
+        "Notification": 23,
+        "SIA/Approvals": 35,
+        "Compensation": 71,
+        "R&R": 10,
+        "Possession": 34
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 24.0
+        },
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 20.0
+        },
+        {
+          "factor": "Pending compensation disbursement",
+          "impact_pct": 11.3
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 10.3
+        },
+        {
+          "factor": "Strong stakeholder responsiveness",
+          "impact_pct": -4.3
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 11 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "High",
+        "due_days": 7
+      },
+      "data_confidence_pct": 86.2,
+      "last_synced_days_ago": 7,
+      "coordinates": {
+        "lat": 25.3182,
+        "lng": 85.8409
+      }
+    },
+    {
+      "id": "PRJ-012",
+      "name": "Purulia-North Doubling & Gauge Conversion",
+      "project_type": "Railway Line",
+      "state": "West Bengal",
+      "district": "Purulia",
+      "current_stage": "SIA/Approvals",
+      "land_area_hectares": 63.8,
+      "families_affected": 1526,
+      "compensation_disbursed_pct": 74,
+      "legal_disputes_count": 0,
+      "documentation_completeness_pct": 70,
+      "rr_progress_pct": 17,
+      "stakeholder_responsiveness_score": 26,
+      "months_since_notification": 39,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 47.5,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 42,
+        "SIA/Approvals": 41,
+        "Compensation": 42,
+        "R&R": 15,
+        "Possession": 21
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 20.0
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 12.4
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 88.7,
+      "last_synced_days_ago": 7,
+      "coordinates": {
+        "lat": 22.3822,
+        "lng": 86.9816
+      }
+    },
+    {
+      "id": "PRJ-013",
+      "name": "Howrah-Bypass Industrial Development Corridor",
+      "project_type": "Industrial Corridor",
+      "state": "West Bengal",
+      "district": "Howrah",
+      "current_stage": "Compensation",
+      "land_area_hectares": 532.2,
+      "families_affected": 878,
+      "compensation_disbursed_pct": 89,
+      "legal_disputes_count": 5,
+      "documentation_completeness_pct": 96,
+      "rr_progress_pct": 50,
+      "stakeholder_responsiveness_score": 53,
+      "months_since_notification": 15,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 52.8,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 55,
+        "SIA/Approvals": 30,
+        "Compensation": 47,
+        "R&R": 18,
+        "Possession": 52
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 12.0
+        },
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 10.0
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 7.5
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 5 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 68.1,
+      "last_synced_days_ago": 21,
+      "coordinates": {
+        "lat": 23.0746,
+        "lng": 87.4487
+      }
+    },
+    {
+      "id": "PRJ-014",
+      "name": "Patna-Bypass 400kV Transmission Corridor",
+      "project_type": "Power Transmission",
+      "state": "Bihar",
+      "district": "Patna",
+      "current_stage": "Possession",
+      "land_area_hectares": 76.2,
+      "families_affected": 456,
+      "compensation_disbursed_pct": 69,
+      "legal_disputes_count": 1,
+      "documentation_completeness_pct": 74,
+      "rr_progress_pct": 18,
+      "stakeholder_responsiveness_score": 51,
+      "months_since_notification": 25,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 55.6,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 20,
+        "SIA/Approvals": 38,
+        "Compensation": 44,
+        "R&R": 55,
+        "Possession": 54
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 16.7
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 12.3
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 88.0,
+      "last_synced_days_ago": 4,
+      "coordinates": {
+        "lat": 26.1847,
+        "lng": 85.6848
+      }
+    },
+    {
+      "id": "PRJ-015",
+      "name": "Kalaburagi-West Peripheral Ring Road",
+      "project_type": "Urban Infrastructure",
+      "state": "Karnataka",
+      "district": "Kalaburagi",
+      "current_stage": "SIA/Approvals",
+      "land_area_hectares": 757.9,
+      "families_affected": 1540,
+      "compensation_disbursed_pct": 75,
+      "legal_disputes_count": 1,
+      "documentation_completeness_pct": 66,
+      "rr_progress_pct": 87,
+      "stakeholder_responsiveness_score": 46,
+      "months_since_notification": 23,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 37.6,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 53,
+        "SIA/Approvals": 38,
+        "Compensation": 42,
+        "R&R": 41,
+        "Possession": 26
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 15.3
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 6.1
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 90.1,
+      "last_synced_days_ago": 3,
+      "coordinates": {
+        "lat": 15.7864,
+        "lng": 76.1153
+      }
+    },
+    {
+      "id": "PRJ-016",
+      "name": "NH-11 Nadia-North Widening",
+      "project_type": "National Highway",
+      "state": "West Bengal",
+      "district": "Nadia",
+      "current_stage": "R&R",
+      "land_area_hectares": 547.0,
+      "families_affected": 556,
+      "compensation_disbursed_pct": 25,
+      "legal_disputes_count": 7,
+      "documentation_completeness_pct": 84,
+      "rr_progress_pct": 81,
+      "stakeholder_responsiveness_score": 21,
+      "months_since_notification": 9,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 41.8,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 54,
+        "SIA/Approvals": 19,
+        "Compensation": 44,
+        "R&R": 42,
+        "Possession": 47
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 16.8
+        },
+        {
+          "factor": "Pending compensation disbursement",
+          "impact_pct": 13.8
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 7 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 91.3,
+      "last_synced_days_ago": 2,
+      "coordinates": {
+        "lat": 22.963,
+        "lng": 87.4157
+      }
+    },
+    {
+      "id": "PRJ-017",
+      "name": "Ludhiana-West Canal Modernization",
+      "project_type": "Irrigation Canal",
+      "state": "Punjab",
+      "district": "Ludhiana",
+      "current_stage": "Compensation",
+      "land_area_hectares": 310.3,
+      "families_affected": 1166,
+      "compensation_disbursed_pct": 57,
+      "legal_disputes_count": 12,
+      "documentation_completeness_pct": 49,
+      "rr_progress_pct": 40,
+      "stakeholder_responsiveness_score": 40,
+      "months_since_notification": 13,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 56.7,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 11,
+        "SIA/Approvals": 21,
+        "Compensation": 57,
+        "R&R": 36,
+        "Possession": 52
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 24.0
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 9.2
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 9.0
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 12 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 86.6,
+      "last_synced_days_ago": 6,
+      "coordinates": {
+        "lat": 31.3369,
+        "lng": 75.8729
+      }
+    },
+    {
+      "id": "PRJ-018",
+      "name": "NH-71 Bhagalpur-West Widening",
+      "project_type": "National Highway",
+      "state": "Bihar",
+      "district": "Bhagalpur",
+      "current_stage": "SIA/Approvals",
+      "land_area_hectares": 781.9,
+      "families_affected": 736,
+      "compensation_disbursed_pct": 44,
+      "legal_disputes_count": 8,
+      "documentation_completeness_pct": 59,
+      "rr_progress_pct": 38,
+      "stakeholder_responsiveness_score": 23,
+      "months_since_notification": 14,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 45.6,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 31,
+        "SIA/Approvals": 46,
+        "Compensation": 27,
+        "R&R": 32,
+        "Possession": 51
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 19.2
+        },
+        {
+          "factor": "Pending compensation disbursement",
+          "impact_pct": 14.6
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 9.3
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 7.4
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 8 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 90.1,
+      "last_synced_days_ago": 6,
+      "coordinates": {
+        "lat": 25.6113,
+        "lng": 85.7154
+      }
+    },
+    {
+      "id": "PRJ-019",
+      "name": "NH-44 Ludhiana-West Widening",
+      "project_type": "National Highway",
+      "state": "Punjab",
+      "district": "Ludhiana",
+      "current_stage": "Compensation",
+      "land_area_hectares": 836.3,
+      "families_affected": 98,
+      "compensation_disbursed_pct": 18,
+      "legal_disputes_count": 5,
+      "documentation_completeness_pct": 74,
+      "rr_progress_pct": 50,
+      "stakeholder_responsiveness_score": 75,
+      "months_since_notification": 40,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 73.0,
+      "risk_category": "High",
+      "stage_risks": {
+        "Notification": 17,
+        "SIA/Approvals": 34,
+        "Compensation": 64,
+        "R&R": 12,
+        "Possession": 55
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 20.0
+        },
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 12.0
+        },
+        {
+          "factor": "Pending compensation disbursement",
+          "impact_pct": 11.8
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 7.5
+        },
+        {
+          "factor": "Strong stakeholder responsiveness",
+          "impact_pct": -4.5
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "High",
+        "due_days": 7
+      },
+      "data_confidence_pct": 83.8,
+      "last_synced_days_ago": 10,
+      "coordinates": {
+        "lat": 30.8233,
+        "lng": 75.5239
+      }
+    },
+    {
+      "id": "PRJ-020",
+      "name": "Nalgonda-North 400kV Transmission Corridor",
+      "project_type": "Power Transmission",
+      "state": "Telangana",
+      "district": "Nalgonda",
+      "current_stage": "Compensation",
+      "land_area_hectares": 568.9,
+      "families_affected": 275,
+      "compensation_disbursed_pct": 43,
+      "legal_disputes_count": 4,
+      "documentation_completeness_pct": 82,
+      "rr_progress_pct": 51,
+      "stakeholder_responsiveness_score": 71,
+      "months_since_notification": 20,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 58.8,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 18,
+        "SIA/Approvals": 22,
+        "Compensation": 57,
+        "R&R": 34,
+        "Possession": 53
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 13.3
+        },
+        {
+          "factor": "Pending compensation disbursement",
+          "impact_pct": 10.5
+        },
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 9.6
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 7.3
+        },
+        {
+          "factor": "Strong stakeholder responsiveness",
+          "impact_pct": -4.3
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 82.4,
+      "last_synced_days_ago": 10,
+      "coordinates": {
+        "lat": 18.2978,
+        "lng": 79.1088
+      }
+    },
+    {
+      "id": "PRJ-021",
+      "name": "Howrah-West Canal Modernization",
+      "project_type": "Irrigation Canal",
+      "state": "West Bengal",
+      "district": "Howrah",
+      "current_stage": "Compensation",
+      "land_area_hectares": 499.3,
+      "families_affected": 1360,
+      "compensation_disbursed_pct": 46,
+      "legal_disputes_count": 3,
+      "documentation_completeness_pct": 86,
+      "rr_progress_pct": 37,
+      "stakeholder_responsiveness_score": 85,
+      "months_since_notification": 32,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 74.0,
+      "risk_category": "High",
+      "stage_risks": {
+        "Notification": 20,
+        "SIA/Approvals": 52,
+        "Compensation": 67,
+        "R&R": 52,
+        "Possession": 50
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 20.0
+        },
+        {
+          "factor": "Pending compensation disbursement",
+          "impact_pct": 10.5
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 9.4
+        },
+        {
+          "factor": "Strong stakeholder responsiveness",
+          "impact_pct": -5.1
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "High",
+        "due_days": 7
+      },
+      "data_confidence_pct": 54.7,
+      "last_synced_days_ago": 30,
+      "coordinates": {
+        "lat": 23.0431,
+        "lng": 87.0121
+      }
+    },
+    {
+      "id": "PRJ-022",
+      "name": "Nalgonda-West Doubling & Gauge Conversion",
+      "project_type": "Railway Line",
+      "state": "Telangana",
+      "district": "Nalgonda",
+      "current_stage": "Notification",
+      "land_area_hectares": 219.4,
+      "families_affected": 993,
+      "compensation_disbursed_pct": 83,
+      "legal_disputes_count": 9,
+      "documentation_completeness_pct": 39,
+      "rr_progress_pct": 68,
+      "stakeholder_responsiveness_score": 73,
+      "months_since_notification": 38,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 45.4,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 44,
+        "SIA/Approvals": 41,
+        "Compensation": 35,
+        "R&R": 25,
+        "Possession": 19
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 21.6
+        },
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 20.0
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 11.0
+        },
+        {
+          "factor": "Strong stakeholder responsiveness",
+          "impact_pct": -4.4
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 9 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 94.0,
+      "last_synced_days_ago": 3,
+      "coordinates": {
+        "lat": 18.1873,
+        "lng": 78.9067
+      }
+    },
+    {
+      "id": "PRJ-023",
+      "name": "Bhagalpur-Bypass Doubling & Gauge Conversion",
+      "project_type": "Railway Line",
+      "state": "Bihar",
+      "district": "Bhagalpur",
+      "current_stage": "Compensation",
+      "land_area_hectares": 480.4,
+      "families_affected": 1757,
+      "compensation_disbursed_pct": 20,
+      "legal_disputes_count": 3,
+      "documentation_completeness_pct": 89,
+      "rr_progress_pct": 95,
+      "stakeholder_responsiveness_score": 87,
+      "months_since_notification": 37,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 68.2,
+      "risk_category": "High",
+      "stage_risks": {
+        "Notification": 30,
+        "SIA/Approvals": 38,
+        "Compensation": 69,
+        "R&R": 42,
+        "Possession": 37
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 20.0
+        },
+        {
+          "factor": "Pending compensation disbursement",
+          "impact_pct": 10.1
+        },
+        {
+          "factor": "Strong stakeholder responsiveness",
+          "impact_pct": -5.2
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "High",
+        "due_days": 7
+      },
+      "data_confidence_pct": 78.4,
+      "last_synced_days_ago": 14,
+      "coordinates": {
+        "lat": 25.9967,
+        "lng": 85.5574
+      }
+    },
+    {
+      "id": "PRJ-024",
+      "name": "Gwalior-North Canal Modernization",
+      "project_type": "Irrigation Canal",
+      "state": "Madhya Pradesh",
+      "district": "Gwalior",
+      "current_stage": "R&R",
+      "land_area_hectares": 450.3,
+      "families_affected": 1303,
+      "compensation_disbursed_pct": 35,
+      "legal_disputes_count": 2,
+      "documentation_completeness_pct": 39,
+      "rr_progress_pct": 46,
+      "stakeholder_responsiveness_score": 50,
+      "months_since_notification": 19,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 48.1,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 30,
+        "SIA/Approvals": 44,
+        "Compensation": 15,
+        "R&R": 42,
+        "Possession": 34
+      },
+      "top_drivers": [
+        {
+          "factor": "Pending compensation disbursement",
+          "impact_pct": 15.0
+        },
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 12.7
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 11.0
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 8.1
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Escalate 169 pending compensation disbursement cases to District Collector",
+          "Set a 15-day disbursement completion target with weekly tracking"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 86.9,
+      "last_synced_days_ago": 5,
+      "coordinates": {
+        "lat": 23.5327,
+        "lng": 77.6477
+      }
+    },
+    {
+      "id": "PRJ-025",
+      "name": "Nadia-South Industrial Development Corridor",
+      "project_type": "Industrial Corridor",
+      "state": "West Bengal",
+      "district": "Nadia",
+      "current_stage": "Notification",
+      "land_area_hectares": 710.5,
+      "families_affected": 817,
+      "compensation_disbursed_pct": 79,
+      "legal_disputes_count": 11,
+      "documentation_completeness_pct": 32,
+      "rr_progress_pct": 83,
+      "stakeholder_responsiveness_score": 68,
+      "months_since_notification": 32,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 46.2,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 42,
+        "SIA/Approvals": 34,
+        "Compensation": 36,
+        "R&R": 44,
+        "Possession": 44
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 24.0
+        },
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 20.0
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 12.2
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 11 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 95.4,
+      "last_synced_days_ago": 1,
+      "coordinates": {
+        "lat": 23.2598,
+        "lng": 87.9774
+      }
+    },
+    {
+      "id": "PRJ-026",
+      "name": "Coimbatore-South 400kV Transmission Corridor",
+      "project_type": "Power Transmission",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "current_stage": "SIA/Approvals",
+      "land_area_hectares": 582.1,
+      "families_affected": 848,
+      "compensation_disbursed_pct": 26,
+      "legal_disputes_count": 9,
+      "documentation_completeness_pct": 46,
+      "rr_progress_pct": 89,
+      "stakeholder_responsiveness_score": 88,
+      "months_since_notification": 3,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 29.7,
+      "risk_category": "Low",
+      "stage_risks": {
+        "Notification": 47,
+        "SIA/Approvals": 29,
+        "Compensation": 15,
+        "R&R": 51,
+        "Possession": 37
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 21.6
+        },
+        {
+          "factor": "Pending compensation disbursement",
+          "impact_pct": 15.5
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 9.7
+        },
+        {
+          "factor": "Strong stakeholder responsiveness",
+          "impact_pct": -5.3
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 9 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "Low",
+        "due_days": 30
+      },
+      "data_confidence_pct": 85.3,
+      "last_synced_days_ago": 6,
+      "coordinates": {
+        "lat": 10.5628,
+        "lng": 78.454
+      }
+    },
+    {
+      "id": "PRJ-027",
+      "name": "Nadia-North Doubling & Gauge Conversion",
+      "project_type": "Railway Line",
+      "state": "West Bengal",
+      "district": "Nadia",
+      "current_stage": "SIA/Approvals",
+      "land_area_hectares": 749.5,
+      "families_affected": 589,
+      "compensation_disbursed_pct": 58,
+      "legal_disputes_count": 1,
+      "documentation_completeness_pct": 40,
+      "rr_progress_pct": 70,
+      "stakeholder_responsiveness_score": 22,
+      "months_since_notification": 36,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 46.2,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 32,
+        "SIA/Approvals": 45,
+        "Compensation": 51,
+        "R&R": 12,
+        "Possession": 11
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 20.0
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 10.8
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 92.6,
+      "last_synced_days_ago": 1,
+      "coordinates": {
+        "lat": 23.4395,
+        "lng": 87.1392
+      }
+    },
+    {
+      "id": "PRJ-028",
+      "name": "Bhadrak-East Doubling & Gauge Conversion",
+      "project_type": "Railway Line",
+      "state": "Odisha",
+      "district": "Bhadrak",
+      "current_stage": "Compensation",
+      "land_area_hectares": 197.0,
+      "families_affected": 1452,
+      "compensation_disbursed_pct": 37,
+      "legal_disputes_count": 7,
+      "documentation_completeness_pct": 51,
+      "rr_progress_pct": 87,
+      "stakeholder_responsiveness_score": 34,
+      "months_since_notification": 12,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 50.0,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 16,
+        "SIA/Approvals": 47,
+        "Compensation": 51,
+        "R&R": 46,
+        "Possession": 53
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 16.8
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 8.8
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 7 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 93.6,
+      "last_synced_days_ago": 4,
+      "coordinates": {
+        "lat": 20.9896,
+        "lng": 84.6504
+      }
+    },
+    {
+      "id": "PRJ-029",
+      "name": "Warangal-West Industrial Development Corridor",
+      "project_type": "Industrial Corridor",
+      "state": "Telangana",
+      "district": "Warangal",
+      "current_stage": "Notification",
+      "land_area_hectares": 660.0,
+      "families_affected": 1761,
+      "compensation_disbursed_pct": 92,
+      "legal_disputes_count": 5,
+      "documentation_completeness_pct": 45,
+      "rr_progress_pct": 82,
+      "stakeholder_responsiveness_score": 25,
+      "months_since_notification": 24,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 39.0,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 38,
+        "SIA/Approvals": 14,
+        "Compensation": 42,
+        "R&R": 51,
+        "Possession": 31
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 16.0
+        },
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 12.0
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 9.9
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 81.9,
+      "last_synced_days_ago": 10,
+      "coordinates": {
+        "lat": 17.4152,
+        "lng": 79.4041
+      }
+    },
+    {
+      "id": "PRJ-030",
+      "name": "Nadia-West Peripheral Ring Road",
+      "project_type": "Urban Infrastructure",
+      "state": "West Bengal",
+      "district": "Nadia",
+      "current_stage": "Compensation",
+      "land_area_hectares": 627.7,
+      "families_affected": 1352,
+      "compensation_disbursed_pct": 39,
+      "legal_disputes_count": 5,
+      "documentation_completeness_pct": 98,
+      "rr_progress_pct": 71,
+      "stakeholder_responsiveness_score": 79,
+      "months_since_notification": 29,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 75.6,
+      "risk_category": "High",
+      "stage_risks": {
+        "Notification": 47,
+        "SIA/Approvals": 27,
+        "Compensation": 77,
+        "R&R": 15,
+        "Possession": 27
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 19.3
+        },
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 12.0
+        },
+        {
+          "factor": "Strong stakeholder responsiveness",
+          "impact_pct": -4.7
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "High",
+        "due_days": 7
+      },
+      "data_confidence_pct": 51.8,
+      "last_synced_days_ago": 30,
+      "coordinates": {
+        "lat": 23.358,
+        "lng": 87.1926
+      }
+    },
+    {
+      "id": "PRJ-031",
+      "name": "Pune-South Canal Modernization",
+      "project_type": "Irrigation Canal",
+      "state": "Maharashtra",
+      "district": "Pune",
+      "current_stage": "R&R",
+      "land_area_hectares": 166.8,
+      "families_affected": 454,
+      "compensation_disbursed_pct": 50,
+      "legal_disputes_count": 8,
+      "documentation_completeness_pct": 73,
+      "rr_progress_pct": 45,
+      "stakeholder_responsiveness_score": 55,
+      "months_since_notification": 37,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 64.8,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 43,
+        "SIA/Approvals": 22,
+        "Compensation": 15,
+        "R&R": 64,
+        "Possession": 41
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 20.0
+        },
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 19.2
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 8.2
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 95.4,
+      "last_synced_days_ago": 1,
+      "coordinates": {
+        "lat": 19.6662,
+        "lng": 74.9884
+      }
+    },
+    {
+      "id": "PRJ-032",
+      "name": "NH-22 Gwalior-North Widening",
+      "project_type": "National Highway",
+      "state": "Madhya Pradesh",
+      "district": "Gwalior",
+      "current_stage": "SIA/Approvals",
+      "land_area_hectares": 592.6,
+      "families_affected": 647,
+      "compensation_disbursed_pct": 89,
+      "legal_disputes_count": 5,
+      "documentation_completeness_pct": 90,
+      "rr_progress_pct": 80,
+      "stakeholder_responsiveness_score": 87,
+      "months_since_notification": 24,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 42.4,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 45,
+        "SIA/Approvals": 39,
+        "Compensation": 39,
+        "R&R": 27,
+        "Possession": 29
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 16.0
+        },
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 12.0
+        },
+        {
+          "factor": "Strong stakeholder responsiveness",
+          "impact_pct": -5.2
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 86.2,
+      "last_synced_days_ago": 6,
+      "coordinates": {
+        "lat": 23.0017,
+        "lng": 76.9448
+      }
+    },
+    {
+      "id": "PRJ-033",
+      "name": "Gaya-South Doubling & Gauge Conversion",
+      "project_type": "Railway Line",
+      "state": "Bihar",
+      "district": "Gaya",
+      "current_stage": "SIA/Approvals",
+      "land_area_hectares": 507.3,
+      "families_affected": 1576,
+      "compensation_disbursed_pct": 72,
+      "legal_disputes_count": 5,
+      "documentation_completeness_pct": 42,
+      "rr_progress_pct": 34,
+      "stakeholder_responsiveness_score": 57,
+      "months_since_notification": 16,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 38.6,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 21,
+        "SIA/Approvals": 32,
+        "Compensation": 44,
+        "R&R": 18,
+        "Possession": 27
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 12.0
+        },
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 10.7
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 10.4
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 9.9
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 5 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 88.3,
+      "last_synced_days_ago": 5,
+      "coordinates": {
+        "lat": 25.0546,
+        "lng": 84.9654
+      }
+    },
+    {
+      "id": "PRJ-034",
+      "name": "NH-12 Ganjam-Bypass Widening",
+      "project_type": "National Highway",
+      "state": "Odisha",
+      "district": "Ganjam",
+      "current_stage": "SIA/Approvals",
+      "land_area_hectares": 414.7,
+      "families_affected": 717,
+      "compensation_disbursed_pct": 28,
+      "legal_disputes_count": 12,
+      "documentation_completeness_pct": 62,
+      "rr_progress_pct": 71,
+      "stakeholder_responsiveness_score": 34,
+      "months_since_notification": 6,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 38.6,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 41,
+        "SIA/Approvals": 37,
+        "Compensation": 53,
+        "R&R": 13,
+        "Possession": 19
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 24.0
+        },
+        {
+          "factor": "Pending compensation disbursement",
+          "impact_pct": 14.9
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 6.8
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 12 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 86.8,
+      "last_synced_days_ago": 6,
+      "coordinates": {
+        "lat": 20.079,
+        "lng": 84.8754
+      }
+    },
+    {
+      "id": "PRJ-035",
+      "name": "Warangal-Bypass Industrial Development Corridor",
+      "project_type": "Industrial Corridor",
+      "state": "Telangana",
+      "district": "Warangal",
+      "current_stage": "Compensation",
+      "land_area_hectares": 531.4,
+      "families_affected": 1608,
+      "compensation_disbursed_pct": 71,
+      "legal_disputes_count": 2,
+      "documentation_completeness_pct": 86,
+      "rr_progress_pct": 48,
+      "stakeholder_responsiveness_score": 95,
+      "months_since_notification": 29,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 59.4,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 46,
+        "SIA/Approvals": 49,
+        "Compensation": 57,
+        "R&R": 16,
+        "Possession": 23
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 19.3
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 7.8
+        },
+        {
+          "factor": "Strong stakeholder responsiveness",
+          "impact_pct": -5.7
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 88.5,
+      "last_synced_days_ago": 4,
+      "coordinates": {
+        "lat": 18.1506,
+        "lng": 79.2176
+      }
+    },
+    {
+      "id": "PRJ-036",
+      "name": "Khammam-West Industrial Development Corridor",
+      "project_type": "Industrial Corridor",
+      "state": "Telangana",
+      "district": "Khammam",
+      "current_stage": "Notification",
+      "land_area_hectares": 391.2,
+      "families_affected": 1236,
+      "compensation_disbursed_pct": 65,
+      "legal_disputes_count": 2,
+      "documentation_completeness_pct": 59,
+      "rr_progress_pct": 46,
+      "stakeholder_responsiveness_score": 56,
+      "months_since_notification": 31,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 38.5,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 34,
+        "SIA/Approvals": 26,
+        "Compensation": 50,
+        "R&R": 47,
+        "Possession": 52
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 20.0
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 8.1
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 7.4
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 91.7,
+      "last_synced_days_ago": 2,
+      "coordinates": {
+        "lat": 18.3647,
+        "lng": 79.1374
+      }
+    },
+    {
+      "id": "PRJ-037",
+      "name": "Khammam-East Canal Modernization",
+      "project_type": "Irrigation Canal",
+      "state": "Telangana",
+      "district": "Khammam",
+      "current_stage": "Notification",
+      "land_area_hectares": 676.8,
+      "families_affected": 1238,
+      "compensation_disbursed_pct": 77,
+      "legal_disputes_count": 11,
+      "documentation_completeness_pct": 86,
+      "rr_progress_pct": 25,
+      "stakeholder_responsiveness_score": 79,
+      "months_since_notification": 21,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 51.5,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 53,
+        "SIA/Approvals": 42,
+        "Compensation": 44,
+        "R&R": 41,
+        "Possession": 38
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 24.0
+        },
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 14.0
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 11.2
+        },
+        {
+          "factor": "Strong stakeholder responsiveness",
+          "impact_pct": -4.7
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 11 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 51.6,
+      "last_synced_days_ago": 30,
+      "coordinates": {
+        "lat": 17.4965,
+        "lng": 78.9478
+      }
+    },
+    {
+      "id": "PRJ-038",
+      "name": "NH-22 Patiala-West Widening",
+      "project_type": "National Highway",
+      "state": "Punjab",
+      "district": "Patiala",
+      "current_stage": "Possession",
+      "land_area_hectares": 713.0,
+      "families_affected": 1198,
+      "compensation_disbursed_pct": 80,
+      "legal_disputes_count": 11,
+      "documentation_completeness_pct": 64,
+      "rr_progress_pct": 83,
+      "stakeholder_responsiveness_score": 25,
+      "months_since_notification": 13,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 50.6,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 43,
+        "SIA/Approvals": 51,
+        "Compensation": 38,
+        "R&R": 27,
+        "Possession": 53
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 24.0
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 6.5
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 11 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 89.3,
+      "last_synced_days_ago": 7,
+      "coordinates": {
+        "lat": 30.8231,
+        "lng": 75.8771
+      }
+    },
+    {
+      "id": "PRJ-039",
+      "name": "Jabalpur-North 400kV Transmission Corridor",
+      "project_type": "Power Transmission",
+      "state": "Madhya Pradesh",
+      "district": "Jabalpur",
+      "current_stage": "Compensation",
+      "land_area_hectares": 731.2,
+      "families_affected": 695,
+      "compensation_disbursed_pct": 57,
+      "legal_disputes_count": 6,
+      "documentation_completeness_pct": 66,
+      "rr_progress_pct": 94,
+      "stakeholder_responsiveness_score": 71,
+      "months_since_notification": 37,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 65.6,
+      "risk_category": "High",
+      "stage_risks": {
+        "Notification": 39,
+        "SIA/Approvals": 15,
+        "Compensation": 59,
+        "R&R": 17,
+        "Possession": 35
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 20.0
+        },
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 14.4
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 6.1
+        },
+        {
+          "factor": "Strong stakeholder responsiveness",
+          "impact_pct": -4.3
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "High",
+        "due_days": 7
+      },
+      "data_confidence_pct": 92.5,
+      "last_synced_days_ago": 1,
+      "coordinates": {
+        "lat": 23.7379,
+        "lng": 77.7899
+      }
+    },
+    {
+      "id": "PRJ-040",
+      "name": "Mysuru-West 400kV Transmission Corridor",
+      "project_type": "Power Transmission",
+      "state": "Karnataka",
+      "district": "Mysuru",
+      "current_stage": "Compensation",
+      "land_area_hectares": 534.9,
+      "families_affected": 1040,
+      "compensation_disbursed_pct": 85,
+      "legal_disputes_count": 3,
+      "documentation_completeness_pct": 36,
+      "rr_progress_pct": 36,
+      "stakeholder_responsiveness_score": 54,
+      "months_since_notification": 37,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 63.0,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 28,
+        "SIA/Approvals": 38,
+        "Compensation": 59,
+        "R&R": 11,
+        "Possession": 50
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 20.0
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 11.5
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 9.6
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 90.5,
+      "last_synced_days_ago": 3,
+      "coordinates": {
+        "lat": 15.4306,
+        "lng": 75.3872
+      }
+    },
+    {
+      "id": "PRJ-041",
+      "name": "Belagavi-East Industrial Development Corridor",
+      "project_type": "Industrial Corridor",
+      "state": "Karnataka",
+      "district": "Belagavi",
+      "current_stage": "SIA/Approvals",
+      "land_area_hectares": 717.6,
+      "families_affected": 252,
+      "compensation_disbursed_pct": 64,
+      "legal_disputes_count": 11,
+      "documentation_completeness_pct": 49,
+      "rr_progress_pct": 73,
+      "stakeholder_responsiveness_score": 57,
+      "months_since_notification": 34,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 66.5,
+      "risk_category": "High",
+      "stage_risks": {
+        "Notification": 27,
+        "SIA/Approvals": 67,
+        "Compensation": 40,
+        "R&R": 25,
+        "Possession": 39
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 24.0
+        },
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 20.0
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 9.2
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 11 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "High",
+        "due_days": 7
+      },
+      "data_confidence_pct": 54.5,
+      "last_synced_days_ago": 30,
+      "coordinates": {
+        "lat": 15.3615,
+        "lng": 75.5603
+      }
+    },
+    {
+      "id": "PRJ-042",
+      "name": "NH-46 Tumakuru-South Widening",
+      "project_type": "National Highway",
+      "state": "Karnataka",
+      "district": "Tumakuru",
+      "current_stage": "SIA/Approvals",
+      "land_area_hectares": 672.7,
+      "families_affected": 567,
+      "compensation_disbursed_pct": 5,
+      "legal_disputes_count": 2,
+      "documentation_completeness_pct": 68,
+      "rr_progress_pct": 85,
+      "stakeholder_responsiveness_score": 94,
+      "months_since_notification": 33,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 48.6,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 38,
+        "SIA/Approvals": 46,
+        "Compensation": 31,
+        "R&R": 45,
+        "Possession": 44
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 20.0
+        },
+        {
+          "factor": "Pending compensation disbursement",
+          "impact_pct": 18.4
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 5.8
+        },
+        {
+          "factor": "Strong stakeholder responsiveness",
+          "impact_pct": -5.6
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 94.7,
+      "last_synced_days_ago": 3,
+      "coordinates": {
+        "lat": 15.1527,
+        "lng": 76.2194
+      }
+    },
+    {
+      "id": "PRJ-043",
+      "name": "Karimnagar-East Doubling & Gauge Conversion",
+      "project_type": "Railway Line",
+      "state": "Telangana",
+      "district": "Karimnagar",
+      "current_stage": "SIA/Approvals",
+      "land_area_hectares": 409.9,
+      "families_affected": 1681,
+      "compensation_disbursed_pct": 53,
+      "legal_disputes_count": 2,
+      "documentation_completeness_pct": 49,
+      "rr_progress_pct": 73,
+      "stakeholder_responsiveness_score": 24,
+      "months_since_notification": 10,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 30.6,
+      "risk_category": "Low",
+      "stage_risks": {
+        "Notification": 47,
+        "SIA/Approvals": 31,
+        "Compensation": 38,
+        "R&R": 16,
+        "Possession": 43
+      },
+      "top_drivers": [
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 9.2
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Deploy additional survey/verification staff to close documentation gaps",
+          "Digitize pending land records for this project"
+        ],
+        "owner": "Sub-Divisional Magistrate",
+        "priority": "Low",
+        "due_days": 30
+      },
+      "data_confidence_pct": 79.9,
+      "last_synced_days_ago": 10,
+      "coordinates": {
+        "lat": 18.4925,
+        "lng": 78.9184
+      }
+    },
+    {
+      "id": "PRJ-044",
+      "name": "Cuttack-North 400kV Transmission Corridor",
+      "project_type": "Power Transmission",
+      "state": "Odisha",
+      "district": "Cuttack",
+      "current_stage": "Compensation",
+      "land_area_hectares": 346.9,
+      "families_affected": 184,
+      "compensation_disbursed_pct": 47,
+      "legal_disputes_count": 9,
+      "documentation_completeness_pct": 98,
+      "rr_progress_pct": 58,
+      "stakeholder_responsiveness_score": 60,
+      "months_since_notification": 33,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 76.6,
+      "risk_category": "High",
+      "stage_risks": {
+        "Notification": 12,
+        "SIA/Approvals": 49,
+        "Compensation": 68,
+        "R&R": 53,
+        "Possession": 28
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 21.6
+        },
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 20.0
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 6.3
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 9 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "High",
+        "due_days": 7
+      },
+      "data_confidence_pct": 81.6,
+      "last_synced_days_ago": 10,
+      "coordinates": {
+        "lat": 21.0969,
+        "lng": 85.0961
+      }
+    },
+    {
+      "id": "PRJ-045",
+      "name": "Patna-North 400kV Transmission Corridor",
+      "project_type": "Power Transmission",
+      "state": "Bihar",
+      "district": "Patna",
+      "current_stage": "Possession",
+      "land_area_hectares": 53.4,
+      "families_affected": 1650,
+      "compensation_disbursed_pct": 12,
+      "legal_disputes_count": 2,
+      "documentation_completeness_pct": 77,
+      "rr_progress_pct": 65,
+      "stakeholder_responsiveness_score": 38,
+      "months_since_notification": 17,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 52.3,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 36,
+        "SIA/Approvals": 46,
+        "Compensation": 53,
+        "R&R": 21,
+        "Possession": 46
+      },
+      "top_drivers": [
+        {
+          "factor": "Pending compensation disbursement",
+          "impact_pct": 15.9
+        },
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 11.3
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Escalate 290 pending compensation disbursement cases to District Collector",
+          "Set a 15-day disbursement completion target with weekly tracking"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 83.1,
+      "last_synced_days_ago": 10,
+      "coordinates": {
+        "lat": 25.7314,
+        "lng": 85.3591
+      }
+    },
+    {
+      "id": "PRJ-046",
+      "name": "Bhopal-North Doubling & Gauge Conversion",
+      "project_type": "Railway Line",
+      "state": "Madhya Pradesh",
+      "district": "Bhopal",
+      "current_stage": "Compensation",
+      "land_area_hectares": 571.8,
+      "families_affected": 1667,
+      "compensation_disbursed_pct": 64,
+      "legal_disputes_count": 10,
+      "documentation_completeness_pct": 50,
+      "rr_progress_pct": 19,
+      "stakeholder_responsiveness_score": 76,
+      "months_since_notification": 24,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 74.8,
+      "risk_category": "High",
+      "stage_risks": {
+        "Notification": 29,
+        "SIA/Approvals": 50,
+        "Compensation": 73,
+        "R&R": 39,
+        "Possession": 29
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 24.0
+        },
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 16.0
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 12.2
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 9.0
+        },
+        {
+          "factor": "Strong stakeholder responsiveness",
+          "impact_pct": -4.6
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 10 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "High",
+        "due_days": 7
+      },
+      "data_confidence_pct": 75.9,
+      "last_synced_days_ago": 14,
+      "coordinates": {
+        "lat": 22.9391,
+        "lng": 77.2616
+      }
+    },
+    {
+      "id": "PRJ-047",
+      "name": "Karimnagar-Bypass Industrial Development Corridor",
+      "project_type": "Industrial Corridor",
+      "state": "Telangana",
+      "district": "Karimnagar",
+      "current_stage": "SIA/Approvals",
+      "land_area_hectares": 598.9,
+      "families_affected": 64,
+      "compensation_disbursed_pct": 89,
+      "legal_disputes_count": 3,
+      "documentation_completeness_pct": 31,
+      "rr_progress_pct": 82,
+      "stakeholder_responsiveness_score": 26,
+      "months_since_notification": 40,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 54.9,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 41,
+        "SIA/Approvals": 55,
+        "Compensation": 24,
+        "R&R": 48,
+        "Possession": 32
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 20.0
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 12.4
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 50.5,
+      "last_synced_days_ago": 30,
+      "coordinates": {
+        "lat": 17.6628,
+        "lng": 79.1282
+      }
+    },
+    {
+      "id": "PRJ-048",
+      "name": "Cuttack-East Peripheral Ring Road",
+      "project_type": "Urban Infrastructure",
+      "state": "Odisha",
+      "district": "Cuttack",
+      "current_stage": "SIA/Approvals",
+      "land_area_hectares": 383.1,
+      "families_affected": 1206,
+      "compensation_disbursed_pct": 51,
+      "legal_disputes_count": 7,
+      "documentation_completeness_pct": 41,
+      "rr_progress_pct": 47,
+      "stakeholder_responsiveness_score": 61,
+      "months_since_notification": 28,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 54.1,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 22,
+        "SIA/Approvals": 54,
+        "Compensation": 33,
+        "R&R": 43,
+        "Possession": 42
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 18.7
+        },
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 16.8
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 10.6
+        },
+        {
+          "factor": "R&R progress lagging",
+          "impact_pct": 8.0
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 91.0,
+      "last_synced_days_ago": 3,
+      "coordinates": {
+        "lat": 20.9962,
+        "lng": 85.1966
+      }
+    },
+    {
+      "id": "PRJ-049",
+      "name": "Jabalpur-East Peripheral Ring Road",
+      "project_type": "Urban Infrastructure",
+      "state": "Madhya Pradesh",
+      "district": "Jabalpur",
+      "current_stage": "Compensation",
+      "land_area_hectares": 77.9,
+      "families_affected": 1564,
+      "compensation_disbursed_pct": 33,
+      "legal_disputes_count": 9,
+      "documentation_completeness_pct": 80,
+      "rr_progress_pct": 81,
+      "stakeholder_responsiveness_score": 66,
+      "months_since_notification": 7,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 44.6,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 10,
+        "SIA/Approvals": 26,
+        "Compensation": 39,
+        "R&R": 33,
+        "Possession": 53
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 21.6
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 9 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 87.3,
+      "last_synced_days_ago": 6,
+      "coordinates": {
+        "lat": 23.5988,
+        "lng": 77.1146
+      }
+    },
+    {
+      "id": "PRJ-050",
+      "name": "Ludhiana-South Peripheral Ring Road",
+      "project_type": "Urban Infrastructure",
+      "state": "Punjab",
+      "district": "Ludhiana",
+      "current_stage": "Notification",
+      "land_area_hectares": 753.3,
+      "families_affected": 1169,
+      "compensation_disbursed_pct": 46,
+      "legal_disputes_count": 10,
+      "documentation_completeness_pct": 58,
+      "rr_progress_pct": 92,
+      "stakeholder_responsiveness_score": 28,
+      "months_since_notification": 31,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 61.1,
+      "risk_category": "Medium",
+      "stage_risks": {
+        "Notification": 59,
+        "SIA/Approvals": 17,
+        "Compensation": 18,
+        "R&R": 12,
+        "Possession": 12
+      },
+      "top_drivers": [
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 24.0
+        },
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 20.0
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 7.6
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite review of 10 unresolved legal disputes with State Legal Cell",
+          "Constitute a fast-track dispute resolution committee"
+        ],
+        "owner": "State Legal Cell",
+        "priority": "Medium",
+        "due_days": 14
+      },
+      "data_confidence_pct": 49.6,
+      "last_synced_days_ago": 30,
+      "coordinates": {
+        "lat": 30.6652,
+        "lng": 75.4911
+      }
+    },
+    {
+      "id": "PRJ-051",
+      "name": "Tumakuru-North 400kV Transmission Corridor",
+      "project_type": "Power Transmission",
+      "state": "Karnataka",
+      "district": "Tumakuru",
+      "current_stage": "Compensation",
+      "land_area_hectares": 635.5,
+      "families_affected": 1126,
+      "compensation_disbursed_pct": 58,
+      "legal_disputes_count": 5,
+      "documentation_completeness_pct": 49,
+      "rr_progress_pct": 63,
+      "stakeholder_responsiveness_score": 32,
+      "months_since_notification": 33,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 72.4,
+      "risk_category": "High",
+      "stage_risks": {
+        "Notification": 36,
+        "SIA/Approvals": 27,
+        "Compensation": 71,
+        "R&R": 23,
+        "Possession": 38
+      },
+      "top_drivers": [
+        {
+          "factor": "Approval/notification backlog",
+          "impact_pct": 20.0
+        },
+        {
+          "factor": "Active/unresolved legal disputes",
+          "impact_pct": 12.0
+        },
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 9.2
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Expedite SIA public hearing and Section 19 declaration (statutory window: 0 months remaining)",
+          "Prioritize this project in the next District Land Acquisition Committee meeting"
+        ],
+        "owner": "District Collector",
+        "priority": "High",
+        "due_days": 7
+      },
+      "data_confidence_pct": 75.2,
+      "last_synced_days_ago": 14,
+      "coordinates": {
+        "lat": 15.2336,
+        "lng": 75.3833
+      }
+    },
+    {
+      "id": "PRJ-052",
+      "name": "NH-61 Patiala-North Widening",
+      "project_type": "National Highway",
+      "state": "Punjab",
+      "district": "Patiala",
+      "current_stage": "SIA/Approvals",
+      "land_area_hectares": 117.0,
+      "families_affected": 1756,
+      "compensation_disbursed_pct": 63,
+      "legal_disputes_count": 0,
+      "documentation_completeness_pct": 57,
+      "rr_progress_pct": 92,
+      "stakeholder_responsiveness_score": 22,
+      "months_since_notification": 5,
+      "statutory_deadline_months": 12,
+      "overall_risk_score": 18.3,
+      "risk_category": "Low",
+      "stage_risks": {
+        "Notification": 25,
+        "SIA/Approvals": 18,
+        "Compensation": 23,
+        "R&R": 14,
+        "Possession": 45
+      },
+      "top_drivers": [
+        {
+          "factor": "Incomplete documentation",
+          "impact_pct": 7.7
+        }
+      ],
+      "recommendation": {
+        "actions": [
+          "Deploy additional survey/verification staff to close documentation gaps",
+          "Digitize pending land records for this project"
+        ],
+        "owner": "Sub-Divisional Magistrate",
+        "priority": "Low",
+        "due_days": 30
+      },
+      "data_confidence_pct": 91.7,
+      "last_synced_days_ago": 5,
+      "coordinates": {
+        "lat": 30.5486,
+        "lng": 75.1591
+      }
+    }
+  ]
+}

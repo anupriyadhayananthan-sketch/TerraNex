@@ -1,0 +1,277 @@
+{
+  "_meta": {
+    "label": "General-concept knowledge base for the rule-based project assistant",
+    "note": "Keyword-matched, not an ML model. Add new entries here to expand what the assistant can answer generically, without touching project-specific logic."
+  },
+  "entries": [
+    {
+      "id": "rfctlarr_act",
+      "keywords": [
+        "rfctlarr",
+        "what is the act",
+        "land acquisition act",
+        "the act",
+        "what law"
+      ],
+      "example_questions": [
+        "What is the RFCTLARR Act?",
+        "Which law governs land acquisition?"
+      ],
+      "answer": "The RFCTLARR Act, 2013 (Right to Fair Compensation and Transparency in Land Acquisition, Rehabilitation and Resettlement Act) is the law that governs how the government acquires private land for public projects in India. It lays out the stages a project must go through — Notification, Social Impact Assessment, Declaration, Compensation Award, Rehabilitation & Resettlement, and Possession — along with statutory deadlines at each step."
+    },
+    {
+      "id": "section11",
+      "keywords": [
+        "section 11",
+        "preliminary notification",
+        "notification stage"
+      ],
+      "example_questions": [
+        "What is Section 11?",
+        "What happens at the notification stage?"
+      ],
+      "answer": "Section 11 is the Preliminary Notification stage — the government formally announces its intent to acquire a specific piece of land for a project. This is the very first legal step in the acquisition process."
+    },
+    {
+      "id": "section19",
+      "keywords": [
+        "section 19",
+        "declaration",
+        "time bar",
+        "time-bar",
+        "lapse",
+        "12 month",
+        "12-month"
+      ],
+      "example_questions": [
+        "What is Section 19?",
+        "What is a time-bar lapse?",
+        "Why does a project lapse after 12 months?"
+      ],
+      "answer": "Section 19 is the Declaration stage, which must legally happen within 12 months of the Section 11 notification. If it doesn't, the entire acquisition proceeding legally lapses ('time-bar lapse') and the government has to restart the whole process from Section 11. This is why tracking this deadline closely matters so much."
+    },
+    {
+      "id": "section30",
+      "keywords": [
+        "section 30",
+        "compensation award",
+        "award stage"
+      ],
+      "example_questions": [
+        "What is Section 30?",
+        "What is the compensation award stage?"
+      ],
+      "answer": "Section 30 is the Compensation Award stage — where the exact compensation amount for the affected landowners is officially determined and announced."
+    },
+    {
+      "id": "sia",
+      "keywords": [
+        "sia",
+        "social impact assessment"
+      ],
+      "example_questions": [
+        "What is SIA?",
+        "What is a Social Impact Assessment?"
+      ],
+      "answer": "SIA (Social Impact Assessment) is a study conducted before land acquisition to assess how the affected families and community will be impacted, and whether the acquisition is justified. Public hearings are usually part of this stage."
+    },
+    {
+      "id": "rr",
+      "keywords": [
+        "r&r",
+        "rr",
+        "rehabilitation",
+        "resettlement"
+      ],
+      "example_questions": [
+        "What is R&R?",
+        "What does rehabilitation and resettlement mean?"
+      ],
+      "answer": "R&R (Rehabilitation & Resettlement) refers to the support provided to families who lose their land or livelihood — this can include alternate housing, compensation for lost livelihoods, and other resettlement assistance."
+    },
+    {
+      "id": "possession",
+      "keywords": [
+        "possession",
+        "handover",
+        "physical possession"
+      ],
+      "example_questions": [
+        "What does possession mean?",
+        "What is the possession stage?"
+      ],
+      "answer": "Possession is the final stage — where the government formally takes physical control of the acquired land, after compensation and R&R obligations are settled."
+    },
+    {
+      "id": "risk_score_general",
+      "keywords": [
+        "risk score",
+        "how is risk calculated",
+        "what does risk mean"
+      ],
+      "example_questions": [
+        "What does the risk score mean?",
+        "How is the risk score calculated?"
+      ],
+      "answer": "The risk score (0-100%) estimates how likely a project is to face delays. It's calculated from factors like how overdue the project is, pending compensation, legal disputes, documentation completeness, and how fresh the underlying data is."
+    },
+    {
+      "id": "risk_category_general",
+      "keywords": [
+        "high risk",
+        "medium risk",
+        "low risk",
+        "risk category"
+      ],
+      "example_questions": [
+        "What is High risk?",
+        "What counts as Medium risk?"
+      ],
+      "answer": "Projects are grouped into three categories: High risk (score 65 and above), Medium risk (35-64), and Low risk (below 35). High-risk projects need the most urgent attention."
+    },
+    {
+      "id": "compensation_general",
+      "keywords": [
+        "what is compensation",
+        "compensation meaning"
+      ],
+      "example_questions": [
+        "What is compensation in land acquisition?"
+      ],
+      "answer": "Compensation is the payment made to landowners and affected families in exchange for the land being acquired. Delays in disbursing this payment are one of the most common causes of project delays."
+    },
+    {
+      "id": "legal_dispute_general",
+      "keywords": [
+        "legal dispute",
+        "litigation meaning",
+        "what is a legal dispute"
+      ],
+      "example_questions": [
+        "What is a legal dispute in this context?"
+      ],
+      "answer": "A legal dispute usually refers to a court case or formal objection raised by landowners or other parties — often about compensation amount, ownership, or the acquisition process itself. Unresolved disputes are a major driver of delay."
+    },
+    {
+      "id": "explainable_ai",
+      "keywords": [
+        "explainable ai",
+        "why explanation",
+        "shap",
+        "ml-verified",
+        "rule-based badge"
+      ],
+      "example_questions": [
+        "What does the explanation panel show?",
+        "What is a rule-based vs ML-verified badge?"
+      ],
+      "answer": "The 'Why is this risky?' panel shows the top factors driving a project's risk score. Most projects use a transparent rule-based formula. A subset of 10 projects use a real trained machine learning model instead — those show an 'ML-verified' badge, while the rest show a 'Rule-based' badge, so it's always clear which method was used."
+    },
+    {
+      "id": "what_if_simulator",
+      "keywords": [
+        "what if",
+        "simulator",
+        "simulate",
+        "what-if"
+      ],
+      "example_questions": [
+        "What does the What-If simulator do?",
+        "How does the simulator work?"
+      ],
+      "answer": "The What-If Simulator lets you test a hypothetical change — like increasing the compensation disbursed percentage — and instantly see how the risk score would change, without affecting the real project data."
+    },
+    {
+      "id": "data_confidence_general",
+      "keywords": [
+        "data confidence",
+        "how reliable is data",
+        "last synced"
+      ],
+      "example_questions": [
+        "What does data confidence mean?",
+        "What does 'last synced' mean?"
+      ],
+      "answer": "Data confidence reflects how fresh the underlying information is. It's based on how many days ago the data was last updated — more recent data means higher confidence in the prediction."
+    },
+    {
+      "id": "escalation",
+      "keywords": [
+        "escalation",
+        "escalate",
+        "district collector",
+        "intervention"
+      ],
+      "example_questions": [
+        "What does escalation mean?",
+        "Who handles an escalated project?"
+      ],
+      "answer": "Escalation means forwarding an unresolved high-risk issue to the next level of authority — for example, from a local officer to the District Collector, and further up if it's still unresolved. The 'Assign intervention' button on a project simulates this process."
+    },
+    {
+      "id": "project_types",
+      "keywords": [
+        "project type",
+        "what types of projects",
+        "kinds of projects"
+      ],
+      "example_questions": [
+        "What types of projects does this track?"
+      ],
+      "answer": "This system tracks several project types: National Highways, Railway Lines, Irrigation Canals, Power Transmission corridors, Industrial Corridors, and Urban Infrastructure projects."
+    },
+    {
+      "id": "stages_overview",
+      "keywords": [
+        "stages",
+        "lifecycle",
+        "stage wise",
+        "stage-wise"
+      ],
+      "example_questions": [
+        "What are the stages of land acquisition?"
+      ],
+      "answer": "The five stages tracked are: Notification, SIA/Approvals, Compensation, R&R (Rehabilitation & Resettlement), and Possession. Each project's stage-wise risk bar shows how risky each of these steps currently is for that project."
+    },
+    {
+      "id": "app_purpose",
+      "keywords": [
+        "what is this app",
+        "what does this do",
+        "purpose of terranex",
+        "what is terranex"
+      ],
+      "example_questions": [
+        "What does this app do?",
+        "What is TerraNex AI?"
+      ],
+      "answer": "TerraNex AI predicts which land acquisition projects are likely to face delays, explains why, and recommends what action to take — so officials can act before a delay actually happens, instead of finding out after the fact."
+    },
+    {
+      "id": "voice_update_help",
+      "keywords": [
+        "voice update",
+        "voice report",
+        "record update",
+        "how does voice work"
+      ],
+      "example_questions": [
+        "How does the voice update feature work?"
+      ],
+      "answer": "Click 'Record field update' and speak a short sentence like 'compensation released for 12 families, 3 pending.' The app converts your speech to text and automatically pulls out the numbers into structured fields."
+    },
+    {
+      "id": "data_source_honesty",
+      "keywords": [
+        "is this real data",
+        "real government data",
+        "synthetic data",
+        "fake data"
+      ],
+      "example_questions": [
+        "Is this real government data?"
+      ],
+      "answer": "This demo uses a synthetic dataset shaped around real patterns found in government sources (Parliament replies, data.gov.in), but individual project names and numbers are made up for demonstration purposes — this is stated clearly throughout the app."
+    }
+  ]
+}

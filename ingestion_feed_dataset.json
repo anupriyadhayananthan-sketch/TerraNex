@@ -1,0 +1,185 @@
+{
+  "_meta": {
+    "label": "Simulated data-ingestion feed for demo purposes",
+    "grounding_note": "Headlines are synthetic, generic summaries shaped in the style of real Parliament Unstarred Question replies, data.gov.in dataset updates, PIB releases and eParlib archive records researched for this project. No specific real project's figures are represented — this simulates what an automated ingestion pipeline would surface, without performing any live scraping.",
+    "count": 22
+  },
+  "feed": [
+    {
+      "id": "FEED-002",
+      "date": "2026-09-24",
+      "days_ago": 2,
+      "source": "eParlib Archive Record",
+      "headline": "Press release notes Section 19 declaration issued for a power transmission project in Telangana",
+      "linked_project_id": null
+    },
+    {
+      "id": "FEED-012",
+      "date": "2026-09-24",
+      "days_ago": 2,
+      "source": "Lok Sabha Unstarred Question Reply",
+      "headline": "Archive record shows documentation verification completed for a railway line project in West Bengal",
+      "linked_project_id": "PRJ-033"
+    },
+    {
+      "id": "FEED-016",
+      "date": "2026-09-24",
+      "days_ago": 2,
+      "source": "data.gov.in Dataset Update",
+      "headline": "Press release notes Section 19 declaration issued for a power transmission project in Bihar",
+      "linked_project_id": null
+    },
+    {
+      "id": "FEED-007",
+      "date": "2026-09-23",
+      "days_ago": 3,
+      "source": "eParlib Archive Record",
+      "headline": "Reply lists possession handover delay for a irrigation canal project in Madhya Pradesh",
+      "linked_project_id": null
+    },
+    {
+      "id": "FEED-013",
+      "date": "2026-09-22",
+      "days_ago": 4,
+      "source": "PIB Press Release",
+      "headline": "Press release notes Section 19 declaration issued for a urban infrastructure project in Punjab",
+      "linked_project_id": null
+    },
+    {
+      "id": "FEED-006",
+      "date": "2026-09-21",
+      "days_ago": 5,
+      "source": "Lok Sabha Unstarred Question Reply",
+      "headline": "Archive record shows documentation verification completed for a irrigation canal project in Telangana",
+      "linked_project_id": null
+    },
+    {
+      "id": "FEED-010",
+      "date": "2026-09-21",
+      "days_ago": 5,
+      "source": "Rajya Sabha Unstarred Question Reply",
+      "headline": "Reply confirms compensation disbursement pending for a irrigation canal project in Telangana",
+      "linked_project_id": "PRJ-038"
+    },
+    {
+      "id": "FEED-001",
+      "date": "2026-09-20",
+      "days_ago": 6,
+      "source": "Lok Sabha Unstarred Question Reply",
+      "headline": "Reply confirms compensation disbursement pending for a railway line project in Odisha",
+      "linked_project_id": null
+    },
+    {
+      "id": "FEED-008",
+      "date": "2026-09-20",
+      "days_ago": 6,
+      "source": "PIB Press Release",
+      "headline": "Reply lists possession handover delay for a industrial corridor project in Telangana",
+      "linked_project_id": "PRJ-007"
+    },
+    {
+      "id": "FEED-003",
+      "date": "2026-09-19",
+      "days_ago": 7,
+      "source": "eParlib Archive Record",
+      "headline": "Reply confirms compensation disbursement pending for a irrigation canal project in Telangana",
+      "linked_project_id": "PRJ-026"
+    },
+    {
+      "id": "FEED-004",
+      "date": "2026-09-19",
+      "days_ago": 7,
+      "source": "Lok Sabha Unstarred Question Reply",
+      "headline": "Archive record shows documentation verification completed for a industrial corridor project in Uttar Pradesh",
+      "linked_project_id": "PRJ-042"
+    },
+    {
+      "id": "FEED-022",
+      "date": "2026-09-18",
+      "days_ago": 8,
+      "source": "Rajya Sabha Unstarred Question Reply",
+      "headline": "Dataset update reports revised land area figures for a railway line project in Odisha",
+      "linked_project_id": null
+    },
+    {
+      "id": "FEED-018",
+      "date": "2026-09-17",
+      "days_ago": 9,
+      "source": "PIB Press Release",
+      "headline": "Reply lists possession handover delay for a railway line project in Bihar",
+      "linked_project_id": "PRJ-005"
+    },
+    {
+      "id": "FEED-019",
+      "date": "2026-09-15",
+      "days_ago": 11,
+      "source": "Rajya Sabha Unstarred Question Reply",
+      "headline": "Archive record shows documentation verification completed for a industrial corridor project in Madhya Pradesh",
+      "linked_project_id": null
+    },
+    {
+      "id": "FEED-009",
+      "date": "2026-09-12",
+      "days_ago": 14,
+      "source": "eParlib Archive Record",
+      "headline": "Press release notes Section 19 declaration issued for a irrigation canal project in Madhya Pradesh",
+      "linked_project_id": null
+    },
+    {
+      "id": "FEED-005",
+      "date": "2026-09-09",
+      "days_ago": 17,
+      "source": "Lok Sabha Unstarred Question Reply",
+      "headline": "Archive record shows documentation verification completed for a power transmission project in Telangana",
+      "linked_project_id": "PRJ-004"
+    },
+    {
+      "id": "FEED-014",
+      "date": "2026-09-09",
+      "days_ago": 17,
+      "source": "eParlib Archive Record",
+      "headline": "Dataset update reports revised land area figures for a irrigation canal project in West Bengal",
+      "linked_project_id": "PRJ-010"
+    },
+    {
+      "id": "FEED-015",
+      "date": "2026-09-07",
+      "days_ago": 19,
+      "source": "PIB Press Release",
+      "headline": "Archive record shows documentation verification completed for a national highway project in Punjab",
+      "linked_project_id": null
+    },
+    {
+      "id": "FEED-017",
+      "date": "2026-09-03",
+      "days_ago": 23,
+      "source": "data.gov.in Dataset Update",
+      "headline": "Reply lists possession handover delay for a irrigation canal project in Telangana",
+      "linked_project_id": "PRJ-004"
+    },
+    {
+      "id": "FEED-020",
+      "date": "2026-09-02",
+      "days_ago": 24,
+      "source": "data.gov.in Dataset Update",
+      "headline": "Dataset update lists 146 families awaiting R&R clearance under a urban infrastructure corridor in Odisha",
+      "linked_project_id": "PRJ-007"
+    },
+    {
+      "id": "FEED-011",
+      "date": "2026-08-29",
+      "days_ago": 28,
+      "source": "data.gov.in Dataset Update",
+      "headline": "Reply lists possession handover delay for a industrial corridor project in Telangana",
+      "linked_project_id": "PRJ-048"
+    },
+    {
+      "id": "FEED-021",
+      "date": "2026-08-28",
+      "days_ago": 29,
+      "source": "PIB Press Release",
+      "headline": "Reply confirms compensation disbursement pending for a industrial corridor project in Bihar",
+      "linked_project_id": "PRJ-024"
+    }
+  ]
+}
