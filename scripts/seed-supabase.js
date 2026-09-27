@@ -15,19 +15,41 @@
  */
 
 import { createClient } from '@supabase/supabase-js';
-import { readFileSync } from 'fs';
+import { readFileSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import path from 'path';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// ── Auto-load .env from project root if present ────────────────────────────────
+const envPath = path.join(__dirname, '../.env');
+if (existsSync(envPath)) {
+  const envContent = readFileSync(envPath, 'utf8');
+  for (const line of envContent.split('\n')) {
+    const trimmed = line.trim();
+    if (trimmed && !trimmed.startsWith('#')) {
+      const eqIdx = trimmed.indexOf('=');
+      if (eqIdx !== -1) {
+        const key = trimmed.slice(0, eqIdx).trim();
+        let val = trimmed.slice(eqIdx + 1).trim();
+        if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
+          val = val.slice(1, -1);
+        }
+        if (!process.env[key]) {
+          process.env[key] = val;
+        }
+      }
+    }
+  }
+}
+
 // ── Validate env ───────────────────────────────────────────────────────────────
 const SUPABASE_URL = process.env.SUPABASE_URL;
 const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-if (!SUPABASE_URL || !SERVICE_KEY) {
-  console.error('ERROR: Set SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY env vars.');
+if (!SUPABASE_URL || !SERVICE_KEY || SUPABASE_URL.includes('your-project')) {
+  console.error('ERROR: Set valid SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY in your .env file or environment.');
   process.exit(1);
 }
 

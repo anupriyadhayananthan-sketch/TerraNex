@@ -12,6 +12,7 @@ import DataSources from './pages/DataSources';
 import NotFound from './pages/NotFound';
 import PrecedentImpactSimulator from './pages/PrecedentImpactSimulator';
 
+
 export default function App() {
   return (
     <RoleProvider>
@@ -30,6 +31,7 @@ export default function App() {
               <Route path="/map" element={<MapView />} />
               <Route path="/data-sources" element={<DataSources />} />
               <Route path="/precedent-impact" element={<PrecedentImpactSimulator />} />
+              <Route path="/dataset" element={<Dataset />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

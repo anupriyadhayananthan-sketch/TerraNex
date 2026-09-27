@@ -288,15 +288,6 @@ export default function Navbar() {
           <TrendingUp className="w-4 h-4 mb-0.5" />
           <span>Precedent</span>
         </NavLink>
-        <NavLink
-          to="/dataset"
-          className={({ isActive }) =>
-            `flex flex-col items-center py-1 ${isActive ? 'text-indigo-400 font-bold' : 'text-slate-400'}`
-          }
-        >
-          <Table2 className="w-4 h-4 mb-0.5" />
-          <span>Dataset</span>
-        </NavLink>
       </div>
     </header>
   );
